@@ -1,0 +1,647 @@
+body{
+	background: #00008B;
+}
+
+td{
+	border: 1px solid #05092e;
+	font-size: 36px;
+	text-align: center;
+}
+
+.header{
+	background: #192DC8;
+	width: 1400px;
+	margin: 0 auto;
+	padding-top: 15px;
+	font-family: Roboto Slab;
+	color: #05092E;
+	padding-bottom: 15px; 
+	border-radius: 15px;
+	position: relative;
+}
+
+.foodRow, .healthRow, .energyRow, .resRow{
+	height: 20px;
+	width: 800px;
+	background: #466FFB;
+	margin-left: 50px;
+	display: inline-block;
+	border: 2px solid #05092E;
+	position: relative;
+}
+
+.foodRowStatus, .healthRowStatus, .energyRowStatus, .resRowStatus{
+	position: absolute;
+	background: #47519E;
+	max-width: 100%;
+	width: 0%;
+	height: 20px;
+}
+
+.foodRowStatus, .healthRowStatus, .energyRowStatus{
+	width: 100%;
+}
+
+.foodRow{
+	background: #6871BB;
+}
+
+.header-food__text{
+	display: inline-block;
+	margin-left: 5px;
+	font-weight: bold;
+	font-size: 29px;
+}
+
+.healthRow{
+	background: #6871BB;
+	margin-top: 25px;
+}
+.header-health__text{
+	margin-left: 5px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 29px;
+}
+
+.energyRow{
+	background: #6871BB;
+	margin-top: 25px;
+}
+
+.header-energy__text{
+	display: inline-block;
+	margin-left: 5px;
+	font-weight: bold;
+	font-size: 29px;
+}
+
+.resRow{
+	background: #6871BB;
+	margin-top: 25px;
+}
+
+.header-res__text{
+	margin-left: 5px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 29px;
+}
+
+.word-indent{
+	display: inline-block;
+	width: 108px	;
+}
+
+.header__rows{
+	display: inline-block;
+}
+
+
+.money__count{
+	line-height: 115px;
+    width: 159px;
+    height: 115px;
+    margin-left: 50px;
+    font-size: 50px;
+	font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 66px;
+}
+
+.money__count::selection {
+	background: #000;
+}
+
+.nextDay{
+	line-height: 115px;
+	cursor: pointer;
+    font-size: 50px;
+	font-weight: bold;
+    width: 159px;
+    height: 115px;
+    margin-left: 30px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+	top: 66px;
+    bottom: 0;
+    right: 0;
+    left: 1181px;
+}
+
+.nextDay:hover{
+	color: #0a1047;
+}
+
+.nextDay:active{
+	color: #070c3c;
+}
+
+.header__action{
+	position: absolute;
+    right: 104px;
+    top: 12px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.needsBlocks{
+	width: 646px;
+	margin: 0 auto;
+}
+	
+
+.foodBlock, .energyBlock, .healthBlock, .moneyBlock, .respectBlock{
+	width: 100px;
+	height: 100px;
+	background: #192DC8;
+	color: #05092e;
+	border: 5px solid #082567;
+	border-radius: 20px;
+	display: inline-block;
+	text-align: center;
+	margin-top: 30px;
+	cursor: pointer;
+	line-height: 100px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.energyBlock, .healthBlock, .moneyBlock, .respectBlock{
+	margin-left: 20px;
+}
+
+.foodMenu{
+	border-top: 5px solid #082567;
+	border-left: 5px solid #082567;
+	border-right: 5px solid #082567;
+	border-radius: 10px;
+	width: 1000px;
+	background: #192DC8;
+	margin: 30px auto;
+	padding-top: 25px;
+    padding-bottom: 25px;
+    display: none;
+    position: relative;
+}
+
+
+.fastFood-table{
+	margin: 10px auto;
+	border: 1px solid #05092e;
+	background: #2f45e9;
+}
+
+.fastFood-table .buy{
+	background: #112099;
+}
+
+.fastFood-table .buy:hover{
+	background: #101e8d;
+}
+
+.fastFood-table .buy:active{
+	background: #131d72;
+}
+
+.cafe-table{
+	margin: 10px auto;
+	border: 1px solid #05092e;
+	background: #2f45e9;
+}
+
+.cafe-table .buy{
+	background: #112099;
+}
+
+.cafe-table .buy:hover{
+	background: #101e8d;
+}
+
+.cafe-table .buy:active{
+	background: #131d72;
+}
+
+.restaurant-table{
+	margin: 10px auto;
+	border: 1px solid #05092e;
+	background: #2f45e9;
+}
+
+.restaurant-table .buy{
+	background: #112099;
+}
+
+.restaurant-table .buy:hover{
+	background: #101e8d;
+}
+
+.restaurant-table .buy:active{
+	background: #131d72;
+}
+
+.foodCross{
+	position: absolute;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.eatery{
+	width: 440px;
+	margin: 0 auto;
+}
+
+.fastFood, .cafe, .restaurant{
+	border: 2px solid black;
+	width: 140px;
+	height: 50px;
+	text-align: center;
+	background: #2F45E9;
+	display: inline-block;
+	font-size: 26px; 
+    padding-top: 16px;
+    cursor: pointer;	
+}
+
+.fastFood-food{
+	margin-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	display: none;
+}
+
+.water, .chocolate, .burger{
+	font-size: 30px;
+	margin-right: 50px;
+	float: left;
+}
+
+.buyFood{
+	cursor: pointer;
+	font-size: 30px;
+	background: #2F45E9;	
+}
+
+.buyFood::selection{
+	background: none;
+}
+
+.buyFood:hover{
+	background: #4255EB;
+}
+
+
+.cafe-food{
+	margin-top: 20px; 
+	display: none;
+}
+
+
+.restaurant-food{
+	margin-top: 20px; 
+	display: none;
+}
+
+.energyMenu{
+	display: none;
+	font-size: 30px;
+}
+
+.energy-table__wrap{
+	width: 1000px;
+	margin: 30px auto;
+	background: #1892FF;
+	padding-top: 30px;
+	padding-bottom: 20px;  
+	position: relative;
+	border-radius: 10px;
+	border-right: 5px solid #122FAA;
+	border-top: 5px solid #122FAA; 
+}
+
+
+.energyCross{
+	width: 30px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.energy-table{
+	margin: 30px auto;
+	border: 1px solid #122FAA;
+	background: #349fff;
+}
+
+.energy-table .buy{
+	background: #0D78D6;
+}
+
+.energy-table .buy:hover{
+	background: #0a6fc6;
+}
+
+.energy-table .buy:active{
+	background: #1167b2;
+}
+
+
+.healthMenu{
+	display: none;
+}
+
+.energyPerform:hover{
+	background: #4255EB
+}
+
+.health-table__wrap{ 
+	width: 1000px;
+	position: relative;
+	margin: 30px auto;
+	background: #B20A1F;
+	height: 200px;
+	border-radius: 10px;
+	border-top: 5px solid #8D0718;
+	border-right: 5px solid #8D0718;
+    padding-top: 30px;
+    padding-bottom: 110px;
+    border-radius: 10px;
+    border-right: 5px solid #870606;
+    border-left: 5px solid #870606;
+    border-top: 5px solid #870606;
+}
+
+
+.health-table{
+	margin: 30px auto;
+	background: #d1001a;
+	font-size: 30px;
+	border: 1px solid #680612;
+}
+
+.health-table td{
+	border: 1px solid #680612;
+}
+
+.health-table .buy{
+	background: #b00000;
+}
+
+.health-table .buy:hover{
+	background: #A60B1D;
+}
+
+.health-table .buy:active{
+	background: #970718;
+}
+
+
+.healthCross{
+	width: 30px;
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.respectMenu{
+	border-radius: 10px;
+	margin: 30px auto;
+	width: 1000px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background: #C7AEC6;
+	position: relative;
+	height: 150px;
+	display: none;
+	border-top: 5px solid #8E718D;
+	border-left: 5px solid #8E718D;
+	border-right: 5px solid #8E718D;
+}
+
+.leftWing{
+	transform: scaleX(-1);
+    width: 151px;
+    position: absolute;
+    top: 26px;
+    left: 33px;
+}
+
+.rightWing{
+	width: 151px;
+	position: absolute;
+    top: 26px;
+    left: 394px;
+	
+}
+
+.nimbus{
+	position: absolute;
+	top: 4px;
+    width: 150px;
+    left: 218px
+}
+
+.goodDeedsBlock{
+	width: 200px;
+	text-align: center;
+	height: 150px;
+	font-family: Roboto Slab;
+	font-size: 60px;
+	font-weight: bold;
+	//background: green;
+	display: inline-block;
+	border: 1px dashed black;
+	position: absolute;    
+	top: 64px;
+    left: 188px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.badDeedsBlock{
+	width: 200px;
+	font-family: Roboto Slab;
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	height: 150px;
+	display: inline-block;
+	top: 64px;
+	position: absolute;
+	border: 1px dashed black;
+	right: 160px;
+	border-radius: 5px;
+	color: black;
+	cursor: pointer;
+}
+
+.leftHorn{
+	position: absolute;
+    top: 20px;
+    width: 30px;
+    left: 624px;
+    transform: scaleX(-1) rotate(6deg);
+}
+
+.rightHorn{
+	position: absolute;
+    transform: rotate(14deg);
+    width: 30px;
+    top: 25px;
+    left: 833px;
+}
+
+.tail{
+    position: absolute;
+    left: 831px;
+    top: 162px;
+}
+
+.respectCross{
+	width: 30px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.goodDeed{
+	display: block;
+	border-bottom: 2px solid #9aae98;
+	border-radius: 5px;
+	padding-top: 5px;
+}
+
+.goodDeedsMenuWrap{
+	position: absolute;
+	left: 140px;
+    top: 33px;
+    width: 710px;
+}
+
+.goodDeedsMenu{
+	display: none;
+	font-size: 30px;
+}
+
+.goodDeedAgree{
+	background: #81957f;
+	float: right;
+	cursor: pointer;
+}
+
+.goodDeedAgreeMenu{
+	display: none;
+	font-size: 30px;
+	margin-left: 350px;
+	width: 1000px;
+}
+
+.tenDollarsLabel{
+	position: absolute;
+    top: 60px;
+    right: 413px;
+    font-size: 1px;
+    width: 17px;
+    border-radius: 5px;
+    height: 18px;
+    background: black;
+}
+
+#tenDollars, #hundredDollars, #thousandDollars{
+	display: none;
+}
+.hundredDollarsLabel{
+	position: absolute;
+	top: 95px;
+    right: 453px;
+    font-size: 1px;
+    width: 17px;
+    border-radius: 5px;
+    height: 18px;
+    background: black;
+}
+
+.thousandDollarsLabel{
+	position: absolute;
+    top: 129px;
+    right: 408px;
+    font-size: 1px;
+    width: 17px;
+    border-radius: 5px;
+    height: 18px;
+    background: black;
+}
+
+.respectArrowBack{
+	position: absolute;
+	top: 7px;
+	left: 8px;
+	width: 40px;
+	display: none;
+	cursor: pointer;
+}
+
+.badDeedsMenuWrap{
+	position: absolute;
+	left: 140px;
+    top: 33px;
+    width: 710px;
+}
+
+.badDeedsMenu{
+	display: none;
+	font-size: 30px;
+}
+
+.badDeed{
+	display: block;
+	border-bottom: 2px solid #9aae98;
+	border-radius: 5px;
+	padding-top: 5px;
+}
+
+.badDeedAgree{
+	background: #81957f;
+	float: right;
+	cursor: pointer;
+}
+
+.moneyMenu{
+	border-top: 5px solid #082567;
+	border-right: 5px solid #082567;
+	border-left: 5px solid #082567;
+	border-radius: 10px;
+	width: 1000px;
+	background: #192DC8;
+	margin: 30px auto;
+	padding-top: 25px;
+    padding-bottom: 25px;
+    display: none;
+    position: relative;
+}
+
+
+.moneyCross{
+	width: 30px;
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.buy{
+	cursor: pointer;
+	font-size: 36px;
+	background: #2F45E9;
+}
+
+
+
