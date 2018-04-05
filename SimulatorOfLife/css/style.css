@@ -644,4 +644,22 @@ td{
 }
 
 
+.workGet{
+	display: inline-block;
+    background: black;
+    width: 317px;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    margin-left: 105px;
+}
 
+.workQuit{
+	display: inline-block;
+    background: black;
+    text-align: center;
+    width: 317px;
+    color: white;
+    font-size: 34px;
+    margin-left: 105px;
+}
