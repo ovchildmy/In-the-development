@@ -149,7 +149,7 @@ td{
 }
 
 .needsBlocks{
-	width: 646px;
+	width: 647px;
 	margin: 0 auto;
 }
 	
@@ -540,19 +540,43 @@ td{
 .goodDeedAgreeMenu{
 	display: none;
 	font-size: 30px;
-	margin-left: 350px;
-	width: 1000px;
+}
+
+.goodDeedsAgreeDonate{	
+	display: none;
+	margin-left: 300px;
+	font-size: 30px;
+	width: 450px;
+	border: 1px solid black;
+}
+
+.tenDollarsBlock{
+	display: block;
+    border-bottom: 1px solid black;
+}
+
+.hundredDollarsBlock{
+	display: block;
+    border-bottom: 1px solid black;
+}
+
+.thousandDollarsBlock{
+	display: block;
 }
 
 .tenDollarsLabel{
 	position: absolute;
-    top: 60px;
-    right: 413px;
+    top: 56px;
+    right: 254px;
     font-size: 1px;
-    width: 17px;
+    width: 25px;
     border-radius: 5px;
-    height: 18px;
+    height: 25px;
     background: black;
+}
+
+.tenDollarsLabel:active, .thousandDollarsLabel:active, .hundredDollarsLabel:active{
+	background: #11115f;
 }
 
 #tenDollars, #hundredDollars, #thousandDollars{
@@ -560,23 +584,23 @@ td{
 }
 .hundredDollarsLabel{
 	position: absolute;
-	top: 95px;
-    right: 453px;
+	top: 91px;
+    right: 254px;
     font-size: 1px;
-    width: 17px;
+    width: 25px;
     border-radius: 5px;
-    height: 18px;
+    height: 25px;
     background: black;
 }
 
 .thousandDollarsLabel{
 	position: absolute;
-    top: 129px;
-    right: 408px;
+    top: 125px;
+    right: 254px;
     font-size: 1px;
-    width: 17px;
+    width: 25px;
     border-radius: 5px;
-    height: 18px;
+    height: 25px;
     background: black;
 }
 
