@@ -56,7 +56,18 @@ $(".goodDeedsBlock").click(function(){
 })
 
 $(".goodDeedAgree").click(function(){
-	$(".goodDeedsMenuWrap").hide();
+	var thisGoodDeed = $(this).data("gooddeed");
+	var goodDeedAgreeMenu = $(".goodDeedAgreeMenu");
+	
+	$(".goodDeedsMenu").hide()
+	$(".goodDeedAgreeMenu").hide();
+
+	for(i = 0; i < $(".goodDeedAgreeMenu").length; i++){
+		if(goodDeedAgreeMenu.eq(i).data("gooddeed") == thisGoodDeed){
+			$(".goodDeedAgreeMenu").eq(i).show();
+		}
+	}
+
 })
 
 $(".badDeedsBlock").click(function(){
@@ -75,16 +86,13 @@ $(".respectArrowBack").click(function(){											 //Действия стре�
 	var goodDeedsBlock = $('.goodDeedsBlock');
 	var badDeedsBlock = $('.badDeedsBlock');
 
-	if(goodDeedsBlock.css("display") == "none" && goodDeedsMenuWrap.css("display") == "block" || 
-	   badDeedsBlock.css("display") == "none" && badDeedsMenuWrap.css("display") == "block"){
-		
-		$(".respectArrowBack").hide();
-		$(".goodDeedsMenuWrap").hide();
-		$(".badDeedsMenuWrap").hide();
-		$(".deedImg").show();
-		goodDeedsBlock.show();
-		badDeedsBlock.show();
-	}
+	$(".respectArrowBack").hide();
+	$(".goodDeedsMenuWrap").hide();
+	$(".badDeedsMenuWrap").hide();
+	$(".deedImg").show();
+	goodDeedsBlock.show();
+	badDeedsBlock.show();
+	$(".goodDeedAgreeMenu").hide()
 
 	if(goodDeedsBlock.css("display") == "none" && $(".goodDeedsMenu").css("display") == "none"){
 		console.log(123)
