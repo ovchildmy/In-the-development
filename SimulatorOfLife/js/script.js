@@ -7,12 +7,18 @@ function hideAllMenu(){
 }
 
 
+$(".startGame").on("click", function(){
+	$(".mainMenu").hide();
+	$(".header").show();
+	$(".needsBlocks").show();
+})
+
 	$(".needBlock").on("click", function(){
 		var needBlock = $(".needBlock");
 		var divMenu = $(".divMenu");
 		var thisBlockMenu = $(this).data("blockmenu");
 		
-		divMenu.hide()
+		divMenu.hide();
 		for(var i = 0; i < divMenu.length; i++){
 			if(divMenu.eq(i).data("blockmenu") == thisBlockMenu){
 				divMenu.eq(i).show();

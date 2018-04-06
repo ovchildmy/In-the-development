@@ -8,11 +8,60 @@ td{
 	text-align: center;
 }
 
+.mainMenu{
+	width: 560px;
+    background: #3434d6;
+	margin: 120px auto;
+    text-align: center;
+    height: 250px;
+    border-radius: 15px;
+    font-size: 40px;
+    font-family: Roboto Slab;
+}
+
+.startGame {
+    padding-top: 10px;
+}
+
+.startGameText{
+    cursor: pointer;
+
+}
+
+.linkToMe{
+    color: #2b2bab;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.continueGame{
+    margin-top: 7px;
+}
+
+.continueGameText{
+    color: #4f4f4f;
+    cursor: default;
+}
+
+.linkToMeBlock{
+	margin-top: 15px;
+}
+
+.LoadGame{
+    margin-top: 7px;
+    color: #4f4f4f;
+}
+
+.LoadGameText{
+    cursor: default;
+}
+
 .header{
 	background: #192DC8;
 	width: 1400px;
 	margin: 0 auto;
 	padding-top: 15px;
+	display: none;
 	font-family: Roboto Slab;
 	color: #05092E;
 	padding-bottom: 15px; 
@@ -151,6 +200,7 @@ td{
 .needsBlocks{
 	width: 647px;
 	margin: 0 auto;
+	display: none;
 }
 	
 
