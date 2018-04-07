@@ -739,9 +739,12 @@ td{
 }
 
 .helpTo{
-	background: red;
-	width: 150px;
-	height: 50px;
-	font-size: 25px;
-	display: inline-block;
+    width: 290px;
+    border-radius: 15px;
+    border: 1px dashed black;
+    height: 95px;
+    text-align: center;    
+    margin-left: 23px;
+    font-size: 40px;
+    display: inline-block;
 }
