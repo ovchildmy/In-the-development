@@ -739,12 +739,53 @@ td{
 }
 
 .helpTo{
-    width: 290px;
     border-radius: 15px;
     border: 1px dashed black;
-    height: 95px;
-    text-align: center;    
+    height: 110px;
+    text-align: center;
     margin-left: 23px;
     font-size: 40px;
+    word-break: break-word;
+    cursor: pointer;
     display: inline-block;
+}
+
+.goodDeedsSecMenu{
+    height: 95px;
+    display: flex;
+    width: 710px;
+    margin: 23px auto;
+}
+
+.helpToNeedy{
+    width: 230px;
+}
+
+.helpToAnimals{
+    width: 210px;
+}
+
+.helpToEnvironment{
+	width: 230px;	
+}
+
+.goodDeedPopup{
+	width: 300px;
+	height: 70px;
+	background: red;
+
+}
+
+.goodDeedPopup{
+	position: absolute;
+	width: 250px;
+	height: 250px;
+}
+
+.goodDeedPopupWrap{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear
 }

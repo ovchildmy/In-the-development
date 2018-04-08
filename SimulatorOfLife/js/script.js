@@ -6,7 +6,6 @@ function hideAllMenu(){
 	$(".foodMenu").hide();
 }
 
-
 $(".startGame").on("click", function(){
 	$(".mainMenu").hide();
 	$(".header").show();
@@ -14,6 +13,7 @@ $(".startGame").on("click", function(){
 })
 
 	$(".needBlock").on("click", function(){
+		$(".goodDeedsSecMenu").hide()
 		var needBlock = $(".needBlock");
 		var divMenu = $(".divMenu");
 		var thisBlockMenu = $(this).data("blockmenu");
@@ -64,13 +64,21 @@ $(".goodDeedsBlock").click(function(){
 $(".goodDeedAgree").click(function(){
 	var thisGoodDeed = $(this).data("gooddeed");
 	var goodDeedAgreeMenu = $(".goodDeedAgreeMenu");
-	
+
 	$(".goodDeedsMenu").hide()
 	$(".goodDeedAgreeMenu").hide();
 
 	for(i = 0; i < $(".goodDeedAgreeMenu").length; i++){
 		if(goodDeedAgreeMenu.eq(i).data("gooddeed") == thisGoodDeed){
-			$(".goodDeedAgreeMenu").eq(i).show();
+			goodDeedAgreeMenu.eq(i).show();
+			
+			if(thisGoodDeed == "3"){
+				$(".goodDeedPopup").closest(".respectMenu").unwrap();
+				$(".goodDeedPopup").wrap("<div class='goodDeedPopupWrap'></div>");
+				$(".goodDeedPopup").show();
+				$(".goodDeedPopupWrap").show()
+			}
+
 		}
 	}
 
