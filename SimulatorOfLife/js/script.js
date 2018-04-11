@@ -73,16 +73,34 @@ $(".goodDeedAgree").click(function(){
 			goodDeedAgreeMenu.eq(i).show();
 			
 			if(thisGoodDeed == "3"){
-				$(".goodDeedPopup").closest(".respectMenu").unwrap();
+			//$(this).createElement("<div class='goodDeedPopup'></div>");
+			//$(".goodDeedPopup").createElement("<span>Are you sure you want to do this?</span>")
+
+				$(".goodDeedPopup").closest(".goodDeedAgreeMenu").unwrap();
+				//console.log(111)
+				//$(".goodDeedAgreeMenu").hide();
 				$(".goodDeedPopup").wrap("<div class='goodDeedPopupWrap'></div>");
 				$(".goodDeedPopup").show();
-				$(".goodDeedPopupWrap").show()
+				$(".goodDeedPopupWrap").show();
+				$(".cross").hide();
+				$(".respectArrowBack").hide();
 			}
 
 		}
 	}
 
 })
+
+$(".goodDeedPopupNo").on('click', function(){
+	$(".goodDeedPopup").unwrap();
+	//$(".goodDeedPopup").wrap("<div class='goodDeedAgreeMenu'></div>")
+	$(".goodDeedPopup").hide();
+	//$(".cross").show();
+	//$(".respectArrowBack").show();
+})
+				//$(".goodDeedPopup").closest(".goodDeedAgreeMenu").unwrap();
+				//console.log(111)
+				//$(".goodDeedPopup").wrap("<div class='goodDeedPopupWrap'></div>");
 
 $(".badDeedsBlock").click(function(){
 	$(".badDeedsBlock").hide();
@@ -112,7 +130,6 @@ $(".respectArrowBack").click(function(){											 //Действия стре�
 		console.log(123)
 	}
 })
-
 
 
 
