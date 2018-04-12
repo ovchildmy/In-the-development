@@ -41,6 +41,17 @@ $('.startNextBut').on('click', function(){
 $(".projects").on('click', function(){
 	$('.projectMenu').show();
 })
-$(".projectClose").on('click', function(){
-	$('.projectMenu').hide();
+
+function hideAllMenu(){
+	$(".projectMenu").hide();
+	$('.workerMenu').hide();
+	$('.financeMenu').hide();
+}
+
+$(".closeMenu").on('click',function(){
+	hideAllMenu();
+})
+
+$('.workers').on('click',function(){
+	$('.workerMenu').show();
 })
