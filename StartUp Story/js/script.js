@@ -37,3 +37,10 @@ $('.startNextBut').on('click', function(){
 	};
 			console.log()
 })
+
+$(".projects").on('click', function(){
+	$('.projectMenu').show();
+})
+$(".projectClose").on('click', function(){
+	$('.projectMenu').hide();
+})

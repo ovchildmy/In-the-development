@@ -44,6 +44,7 @@ body{
     border-radius: 0 0 15px 15px;
     background: red;
     font-size: 26px;
+    margin-bottom: 50px; 
     line-height: 70px;
 }
 
@@ -53,4 +54,71 @@ body{
 	width: 320px;
 	//margin: 0 auto;
 
+}
+
+.projectMenu{
+	border-radius: 15px;
+	width: 500px;
+	background: gray;
+	text-align: center;
+	padding-top: 20px;
+	margin: 0 auto;
+	display: none;
+}
+
+
+.projectMenu>input, .projectMenu>select, .projectMenu>div>input  {
+	width: 400px;
+	height: 40px;
+	font-size: 32px;
+}
+
+.projectMenu>div>input{
+	display: block;
+}
+
+.projectInputRange{
+	width: 400px;
+	font-size: 32px;
+	margin: 0 auto;
+}
+
+.proejctAccept{
+	display: inline-block;
+	background: green;
+	width: 200px;
+	font-size: 32px;
+    cursor: pointer;
+	height: 40px;
+}
+
+.projectClose{
+	width: 200px;
+	font-size: 32px;
+	height: 40px;
+	display: inline-block;
+    cursor: pointer;
+	background: red;
+}
+
+.projects{
+    background: red;
+    width: 652px;
+    cursor: pointer;
+	z-index: 9;
+    height: 181px;
+    transform: rotate(35deg);
+    margin-left: -28px;
+}
+
+.projectsWrap{
+    width: 432px;
+    height: 49px;
+    overflow: hidden;
+}
+
+.projectsSpan{
+	z-index: 10; 
+	font-size: 40px; 
+	color: black;
 }
