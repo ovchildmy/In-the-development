@@ -55,3 +55,45 @@ $(".closeMenu").on('click',function(){
 $('.workers').on('click',function(){
 	$('.workerMenu').show();
 })
+
+
+//////////////////////////////////////
+///Day func
+
+function dayFunction(){
+	var day;
+	var month = 0;
+	var year = 0;
+
+	setInterval(function(){
+	var currentWidth = $(".dayStatus").css('width');
+	var currentWidthNumber = parseInt(currentWidth);
+	var currentDay = $(".currentDay").html();
+	day = currentDay;
+	var newWidth = currentWidthNumber + 10;
+	$(".dayStatus").css('width', newWidth);
+
+	if($(".dayStatus").css('width') == "1300px"){
+		$(".dayStatus").css('width', '0px');
+		$(".currentDay").html(+currentDay+1)
+		//console.log(currentDay)
+		if(currentDay == "30"){
+			$(".currentDay").html("1");
+			month = month + 1;
+		//console.log(month);
+		}
+	}
+	if(month > 12){
+		month = 1;
+		year += 1;
+	}
+	$(".currentDay").attr('title', year+' year, '+ month+' month, '+ day+' day')
+	},1)
+}
+
+dayFunction();
+
+
+$(".financeLine").attr("points", function(){
+
+})
