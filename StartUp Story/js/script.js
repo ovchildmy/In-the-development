@@ -70,7 +70,7 @@ function dayFunction(){
 	var currentWidthNumber = parseInt(currentWidth);
 	var currentDay = $(".currentDay").html();
 	day = currentDay;
-	var newWidth = currentWidthNumber + 10;
+	var newWidth = currentWidthNumber + 1;
 	$(".dayStatus").css('width', newWidth);
 
 	if($(".dayStatus").css('width') == "1300px"){
@@ -88,7 +88,7 @@ function dayFunction(){
 		year += 1;
 	}
 	$(".currentDay").attr('title', year+' year, '+ month+' month, '+ day+' day')
-	},1)
+	},20)
 }
 
 dayFunction();

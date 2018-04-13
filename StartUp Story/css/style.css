@@ -53,6 +53,7 @@ body{
 	height: 65px;
 	width: 250px;
 	//margin: 0 auto;
+	cursor: default;
 
 }
 
@@ -217,7 +218,7 @@ body{
 }
 
 .dayStatus{
-	width: 1200px;
+	width: 0px;
 	height: 25px;
 	background: yellow;
 	border-radius: 5px;
