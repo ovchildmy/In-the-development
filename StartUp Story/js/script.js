@@ -88,12 +88,45 @@ function dayFunction(){
 		year += 1;
 	}
 	$(".currentDay").attr('title', year+' year, '+ month+' month, '+ day+' day')
-	},20)
+	},10)
 }
 
 dayFunction();
 
-
-$(".financeLine").attr("points", function(){
-
+$(".finance").click(function(){
+	$(".financeMenu").show()
 })
+
+
+function financeLine(){
+	var moneyCount = parseInt($(".moneyCount").html());
+	var x = 0;
+	var y = moneyCount;
+	var followChange = 1;
+	var dayStatus = $(".dayStatus");
+
+
+	setInterval(function(){
+		if(moneyCount <= 100){
+			followChange = 1;
+		}else if(moneyCount <= 1000 && moneyCount>100){
+			followChange = 1000; 
+		}else if(moneyCount <=100000 && moneyCount>1000){
+			followChange = 100000;
+		}
+
+		if(dayStatus.css('width') == "1px"){
+			x += 50;
+			y = y/followChange;
+			console.log(y)
+
+		}
+
+			//console.log(typeof(dayStatus.css('width')))
+
+	},20)
+
+	$(".financeLine").attr("points", "")
+}
+
+financeLine();

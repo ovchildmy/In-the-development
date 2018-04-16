@@ -104,24 +104,38 @@ body{
 
 .projects{
     background: red;
-    width: 652px;
+	width: 204px;
     cursor: pointer;
-	z-index: 9;
-    height: 181px;
-    transform: rotate(35deg);
-    margin-left: -28px;
-}
-
-.projectsWrap{
-    width: 432px;
-    height: 49px;
-    overflow: hidden;
+    height: 61px;
+    padding-left: 51px;
+    z-index: 10;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+    margin-left: 120px;
+    display: inline-block;
 }
 
 .projectsSpan{
-	z-index: 10; 
-	font-size: 40px; 
-	color: black;
+    transform: skewX(52deg);
+
+}
+
+.workers{
+    background: red;
+	width: 204px;
+    cursor: pointer;
+    height: 61px;
+    padding-left: 51px;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+   	margin-left: 120px;
+    display: inline-block;
+}
+
+.workersSpan{
+    transform: skewX(52deg);
 }
 
 .workerMenu{
@@ -184,28 +198,40 @@ body{
 
 .workers{
 	cursor: pointer;
-	font-weight: bold;
+}
+
+.finance{
+    background: red;
+	width: 204px;
+    cursor: pointer;
+    height: 61px;
+    padding-left: 51px;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.financeSpan{
+    transform: skewX(52deg);
 }
 
 .financeMenu{
 	overflow: hidden;
 	width: 500px;
-	height: 300px;
-	margin: 50px auto;
-	background: red;
+	height: 400px;
+	margin: 50px auto;    
+	background: linear-gradient(rgb(45, 155, 43),rgb(179, 9, 9));
 	border-left: 3px solid black;
-}
-
-.financeGraphTop{
-	height: 150px;
-}
-
-.financeGraphBottom{
-	height: 150px;
 }
 
 .financeGraphLine{
 	position: absolute;
+}
+
+.financeGraph{
+	height: 400px;
 }
 
 .dayBar{
@@ -222,4 +248,14 @@ body{
 	height: 25px;
 	background: yellow;
 	border-radius: 5px;
+}
+
+.polylineBlock{
+	height: 400px;
+	width: 100000px;
+}
+
+.nav{
+	width: 1300px;
+	margin: 0 auto;
 }

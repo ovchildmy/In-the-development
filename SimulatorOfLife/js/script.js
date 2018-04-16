@@ -76,7 +76,7 @@ $(".goodDeedAgree").click(function(){
 			//$(this).createElement("<div class='goodDeedPopup'></div>");
 			//$(".goodDeedPopup").createElement("<span>Are you sure you want to do this?</span>")
 
-				$(".goodDeedPopup").closest(".goodDeedAgreeMenu").unwrap();
+				//$(".goodDeedPopup").closest(".goodDeedAgreeMenu").unwrap();
 				//console.log(111)
 				//$(".goodDeedAgreeMenu").hide();
 				$(".goodDeedPopup").wrap("<div class='goodDeedPopupWrap'></div>");
