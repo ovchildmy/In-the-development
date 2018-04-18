@@ -231,6 +231,7 @@ body{
 }
 
 .financeGraph{
+	position: relative;
 	height: 400px;
 }
 
@@ -251,8 +252,11 @@ body{
 }
 
 .polylineBlock{
-	height: 400px;
-	width: 100000px;
+    height: 400px;
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+    width: 100000px;
 }
 
 .nav{

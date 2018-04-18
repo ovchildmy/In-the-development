@@ -8,6 +8,9 @@ $(".startExit").on("click", function(){
 	$(".start").hide();
 })
 
+//////////////////////////////////////
+/// Title date func
+
 $('.startNextBut').on('click', function(){
 	var startText = $(".startText");
 	var currentStartText;
@@ -56,39 +59,40 @@ $('.workers').on('click',function(){
 	$('.workerMenu').show();
 })
 
+		$(".financeLine").attr("points", "0,200 ");
 
 //////////////////////////////////////
 ///Day func
-
+var x = 0;
 function dayFunction(){
 	var day;
 	var month = 0;
 	var year = 0;
 
 	setInterval(function(){
-	var currentWidth = $(".dayStatus").css('width');
-	var currentWidthNumber = parseInt(currentWidth);
-	var currentDay = $(".currentDay").html();
-	day = currentDay;
-	var newWidth = currentWidthNumber + 1;
-	$(".dayStatus").css('width', newWidth);
+		var currentWidth = $(".dayStatus").css('width');
+		var currentWidthNumber = parseInt(currentWidth);
+		var currentDay = $(".currentDay").html();
+		day = currentDay;
+		var newWidth = currentWidthNumber + 1;
+		$(".dayStatus").css('width', newWidth);
 
-	if($(".dayStatus").css('width') == "1300px"){
-		$(".dayStatus").css('width', '0px');
-		$(".currentDay").html(+currentDay+1)
-		//console.log(currentDay)
-		if(currentDay == "30"){
-			$(".currentDay").html("1");
-			month = month + 1;
-		//console.log(month);
+		if($(".dayStatus").css('width') == "1300px"){
+			financeLine();
+			$(".dayStatus").css('width', '0px');
+			$(".currentDay").html(+currentDay+1)
+
+			if(currentDay == "30"){
+				$(".currentDay").html("1");
+				month = month + 1;
+			}
 		}
-	}
-	if(month > 12){
-		month = 1;
-		year += 1;
-	}
-	$(".currentDay").attr('title', year+' year, '+ month+' month, '+ day+' day')
-	},10)
+		if(month > 12){
+			month = 1;
+			year += 1;
+		}
+		$(".currentDay").attr('title', year+' year, '+ month+' month, '+ day+' day')
+	},12)
 }
 
 dayFunction();
@@ -98,35 +102,50 @@ $(".finance").click(function(){
 })
 
 
+//////////////////////////////////////
+/////// Finance Line func
+
 function financeLine(){
-	var moneyCount = parseInt($(".moneyCount").html());
-	var x = 0;
+	var moneyCount = parseInt($(".moneyCountNumber").text());
 	var y = moneyCount;
 	var followChange = 1;
-	var dayStatus = $(".dayStatus");
 
+	if(moneyCount <= 100){
+		followChange = 1;
+		y = y/followChange;
+		y = 200 - y;
+	}else if(moneyCount <= 1000 && moneyCount>100){
+		followChange = 1000; 
+		y = y/followChange;
+		y = 150 - y;
+	}else if(moneyCount <=100000 && moneyCount>1000){
+		followChange = 100000;
+		y = y/followChange;
+		y = 100 - y;
+	}
 
-	setInterval(function(){
-		if(moneyCount <= 100){
-			followChange = 1;
-		}else if(moneyCount <= 1000 && moneyCount>100){
-			followChange = 1000; 
-		}else if(moneyCount <=100000 && moneyCount>1000){
-			followChange = 100000;
-		}
-
-		if(dayStatus.css('width') == "1px"){
+		var currentPoints = $(".financeLine").attr("points");
 			x += 50;
-			y = y/followChange;
-			console.log(y)
+			console.log(y);
+			$(".financeLine").attr("points", currentPoints + x+","+y+" ");
 
-		}
+	if($(".polylineBlock").css("width")<= "500px"){
+		var marginLeft = $(".polylineBlock").css("margin-left");
+		$(".polylineBlock").css("margin-left", marginLeft-50)
+	}
 
-			//console.log(typeof(dayStatus.css('width')))
-
-	},20)
-
-	$(".financeLine").attr("points", "")
 }
 
-financeLine();
+
+
+$(".minus").click(function(){
+	var money = $(".moneyCountNumber").text();
+	$(".moneyCountNumber").text(+money - 100);
+})
+
+$(".plus").click(function(){
+	var money = $(".moneyCountNumber").text();
+	$(".moneyCountNumber").text(+money + 100);
+})
+
+

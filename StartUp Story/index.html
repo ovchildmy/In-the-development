@@ -19,7 +19,7 @@
 		<div class="productCount" title="Products">1Product</div>
 		<div class="fanCount" title="Fans">10Fans</div>
 		<div class="workerCount" title="Workers">10Workers</div>
-		<div class="moneyCount" title="Money">1010$</div>
+		<div class="moneyCount" title="Money"><span class="moneyCountNumber">1010</span>$</div>
 		<div class="currentDay">1</div>
 	</div>
 
@@ -27,6 +27,10 @@
 		<div class="dayStatus"></div>
 	</div>
 
+	<span class="plus">+</span>
+		<br><br><br>	
+	<span class="minus">-</span>
+	
 	<div class="nav">	
 		<div class="projects"><div class="projectsSpan">Projects</div></div>
 		<div class="workers"><div class="workersSpan">Workers</div></div>
@@ -88,16 +92,20 @@
 
 
 					<line x1="0" y1="200" x2="500" y2="200"  stroke-width="3" stroke="rgb(0,0,0)"/>	
+				</svg>
 
 					<div class="polylineBlock">
-						<!-- <polyline class="financeLine" points="0,200 100,100" stroke-width="4" fill="none" stroke="#213524"/> -->
-						<polyline points="100,100 150,25 150,75 200,0" fill="none" stroke="black" />
+						<svg width='100000px' height="400px">
+							<polyline class="financeLine" points="" stroke-width="5" fill="none" stroke="#38A027" />
+						</svg>
 					</div>
-				</svg>
 		</div>
 	</div>
 
+
+
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
