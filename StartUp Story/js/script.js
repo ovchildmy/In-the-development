@@ -42,6 +42,7 @@ $('.startNextBut').on('click', function(){
 })
 
 $(".projects").on('click', function(){
+	hideAllMenu();
 	$('.projectMenu').show();
 })
 
@@ -56,6 +57,7 @@ $(".closeMenu").on('click',function(){
 })
 
 $('.workers').on('click',function(){
+	hideAllMenu();
 	$('.workerMenu').show();
 })
 
@@ -98,6 +100,7 @@ function dayFunction(){
 dayFunction();
 
 $(".finance").click(function(){
+	hideAllMenu();
 	$(".financeMenu").show()
 })
 
@@ -110,23 +113,57 @@ function financeLine(){
 	var y = moneyCount;
 	var followChange = 1;
 
-	if(moneyCount <= 100){
+	if(moneyCount <= 100 && moneyCount>=0){
 		followChange = 1;
+		y = y/2;
 		y = y/followChange;
 		y = 200 - y;
 	}else if(moneyCount <= 1000 && moneyCount>100){
-		followChange = 1000; 
+		followChange = 10; 
+		y = y/2;
 		y = y/followChange;
 		y = 150 - y;
 	}else if(moneyCount <=100000 && moneyCount>1000){
-		followChange = 100000;
+		followChange = 1000;
+		y = y/2;
 		y = y/followChange;
 		y = 100 - y;
+	}else if(moneyCount <1000000 && moneyCount>100000){
+		followChange = 10000;
+		y = y/2;
+		y = y/followChange;
+		y = 50 - y;
+	} //// Далее идёт проверка на отрицательное кол-во денег
+	else if(moneyCount >= -100 && moneyCount<0){
+		followChange = 1;
+		y = y/2;
+		y = y/followChange;
+		y = 200 - y;
+	}else if(moneyCount >= -1000 && moneyCount<-100){
+		followChange = 10; 
+		y = y/2;
+		y = y/followChange;
+		y = 250 - y;	
+	}else if(moneyCount >=-100000 && moneyCount<-1000){
+		followChange = 1000;
+		y = y/2;
+		y = y/followChange;
+		y = 300 - y;
+	}else if(moneyCount >-1000000 && moneyCount<-100000){
+		followChange = 10000;
+		y = y/2;
+		y = y/followChange;
+		y = 350 - y;
+	}// Далее пойдёт проверка на максимальные значения
+	else if(moneyCount >= 1000000){
+		y=0;
+	}else if(moneyCount <= -1000000){
+		y=400;
 	}
+	console.log(y)
 
 		var currentPoints = $(".financeLine").attr("points");
 			x += 50;
-			console.log(y);
 			$(".financeLine").attr("points", currentPoints + x+","+y+" ");
 
 	if($(".polylineBlock").css("width")<= "500px"){
@@ -140,12 +177,12 @@ function financeLine(){
 
 $(".minus").click(function(){
 	var money = $(".moneyCountNumber").text();
-	$(".moneyCountNumber").text(+money - 100);
+	$(".moneyCountNumber").text(+money - 90);
 })
 
 $(".plus").click(function(){
 	var money = $(".moneyCountNumber").text();
-	$(".moneyCountNumber").text(+money + 100);
+	$(".moneyCountNumber").text(+money + 100000);
 })
 
 

@@ -42,7 +42,7 @@ body{
     margin: 0 auto;
     text-align: center;
     border-radius: 0 0 15px 15px;
-    background: red;
+    background: #5057b3;
     font-size: 50px;
     margin-bottom: 50px; 
     line-height: 70px;
@@ -63,7 +63,7 @@ body{
 	background: gray;
 	text-align: center;
 	padding-top: 20px;
-	margin: 0 auto;
+	margin: 50px auto;
 	display: none;
 }
 
@@ -103,7 +103,7 @@ body{
 }
 
 .projects{
-    background: red;
+    background: #5057b3;
 	width: 204px;
     cursor: pointer;
     height: 61px;
@@ -122,7 +122,7 @@ body{
 }
 
 .workers{
-    background: red;
+    background: #5057b3;
 	width: 204px;
     cursor: pointer;
     height: 61px;
@@ -143,7 +143,7 @@ body{
 	background: gray;
 	border-radius: 15px;
 	text-align: center;
-	margin: 0 auto;    
+	margin: 50px auto;    
 	font-size: 40px;
 	display: none;
 }
@@ -201,7 +201,7 @@ body{
 }
 
 .finance{
-    background: red;
+    background: #5057b3;
 	width: 204px;
     cursor: pointer;
     height: 61px;
@@ -218,10 +218,25 @@ body{
 }
 
 .financeMenu{
+	width: 720px;
+    margin: 50px auto;
+    display: none;
+    position: relative;
+    background: #475f2b;
+    height: 550px;
+    border-radius: 15px;
+}
+
+.financeGraphWrap{
 	overflow: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 	width: 500px;
 	height: 400px;
-	margin: 50px auto;    
+	margin: auto;    
 	background: linear-gradient(rgb(45, 155, 43),rgb(179, 9, 9));
 	border-left: 3px solid black;
 }
@@ -233,6 +248,14 @@ body{
 .financeGraph{
 	position: relative;
 	height: 400px;
+}
+
+.financeClose{
+	position: absolute;
+    right: 15px;
+    top: 9px;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 .dayBar{
