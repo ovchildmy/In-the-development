@@ -32,31 +32,32 @@
 	<span class="minus">-</span>
 	
 	<div class="nav">	
-		<div class="projects"><div class="projectsSpan">Projects</div></div>
-		<div class="workers"><div class="workersSpan">Workers</div></div>
-		<div class="finance"><div class="financeSpan">Finance</div></div>
+		<div class="projects blockLink" data-menu="projects"><div class="projectsSpan">Projects</div></div>
+		<div class="workers blockLink" data-menu="workers"><div class="workersSpan">Workers</div></div>
+		<div class="finance blockLink" data-menu="finance"><div class="financeSpan">Finance</div></div>
+		<div class="history blockLink" data-menu="history"><div class="historySpan">History</div></div>
 	</div>
 
-	<div class="projectMenu">
+	<div class="projectMenu blockMenu" data-menu="projects">
 		<input type="text" placeholder="Name project">
-		<select>
+		<select class="typeProject">
 			<option disabled>Type project</option>
 			<option>Web-site</option>
-			<option>Office program</option>
-			<option>Indie game</option>
-			<option>Visual editor</option>
-			<option>Audio editor</option>
+			<option>Office Program</option>
+			<option>Indie Game</option>
+			<option>Visual Editor</option>
+			<option>Audio Editor</option>
 		</select>
-		<input type="text" placeholder="Budget $">
 		<div class="projectInputRange">
-			<input type="range">
-			<span></span>% effort
+			<input class="rangeInput" type="range">
+			<span class="rangePercent"></span>% effort
 		</div>
+		<div class="aboutDays">about days: <span class="aboutDaysVal"></span></div>
 		<div class="proejctAccept">Accept</div>
 		<div class="projectClose closeMenu">Close</div>
 	</div>
 
-	<div class="workerMenu">
+	<div class="workerMenu blockMenu" data-menu="workers">
 		<div class="workerMenuHeader">The current state:</div>
 		<div class="workersSalary">y$ per day salary</div>
 		<div>fire worker<div class="workBox"></div></div>
@@ -68,7 +69,7 @@
 		<div class="workerMenuClose closeMenu">Close</div>
 	</div>
 
-	<div class="financeMenu">
+	<div class="financeMenu blockMenu" data-menu="finance">
 		<div  class="financeGraphWrap">
 			<div class="financeGraph">
 					<svg width='500px' height="400px">
@@ -104,6 +105,29 @@
 		</div>
 		<div class="financeClose closeMenu">X</div>
 	</div>
+
+	<div class="historyMenu blockMenu" data-menu="history">
+		
+		<div class="historyTableWrap">
+			<table class="historyTable">
+				<tr>
+					<td><b>Project</b></td>
+					<td><b>Type</b></td>
+					<td><b>Famous</b></td>
+					<td><b>Profit</b></td>
+				</tr>
+				<tr>
+					<td>ASD</td>
+					<td>W-S</td>
+					<td>WORLD</td>
+					<td>1230$</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="historyClose closeMenu">X</div>
+	</div>
+
 
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

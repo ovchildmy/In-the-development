@@ -68,10 +68,16 @@ body{
 }
 
 
+
 .projectMenu>input, .projectMenu>select, .projectMenu>div>input  {
 	width: 400px;
 	height: 40px;
 	font-size: 32px;
+	margin-top: 5px; 
+	border-radius: 5px;
+}
+.projectMenu select{
+	width: 404px;
 }
 
 .projectMenu>div>input{
@@ -115,6 +121,8 @@ body{
     margin-left: 120px;
     display: inline-block;
 }
+
+
 
 .projectsSpan{
     transform: skewX(52deg);
@@ -171,6 +179,10 @@ body{
 	border: 1px solid black;
 }
 
+.workBox:active{
+	background: black;
+}
+
 .workersSalary{
 	color: #840101;
 }
@@ -213,7 +225,7 @@ body{
     display: inline-block;
 }
 
-.financeSpan{
+.financeSpan, .historySpan{
     transform: skewX(52deg);
 }
 
@@ -285,4 +297,64 @@ body{
 .nav{
 	width: 1300px;
 	margin: 0 auto;
+}
+
+.aboutDays{
+	font-size: 20px;
+	color: #575757;
+	margin: 5px;
+}
+
+.historySpan{
+    transform: skewX(52deg);
+}
+
+.history{
+    background: #5057b3;
+	width: 204px;
+    cursor: pointer;
+    height: 61px;
+    margin-top: 60px;
+    padding-left: 51px;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.historyMenu{
+	display: none;
+	width: 1300px;
+	height: 200px;
+    margin: 50px auto;
+	background: #5057b3;	
+	position: relative;
+	border-radius: 15px;
+	padding-top: 2px;
+}
+
+.historyClose{
+	position: absolute;
+    right: 15px;
+    top: 9px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.historyTable{
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+.historyTableWrap{
+	width: 1000px;
+    margin: 40px auto;
+	font-size: 40px;
+}
+
+.historyTable td{
+	border: 1px solid black;
+	width: 325px;
+	text-align: center;
 }

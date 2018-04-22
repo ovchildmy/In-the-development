@@ -41,14 +41,11 @@ $('.startNextBut').on('click', function(){
 			console.log()
 })
 
-$(".projects").on('click', function(){
-	hideAllMenu();
-	$('.projectMenu').show();
-})
 
 function hideAllMenu(){
 	$(".projectMenu").hide();
 	$('.workerMenu').hide();
+	$('.historyMenu').hide();
 	$('.financeMenu').hide();
 }
 
@@ -56,10 +53,7 @@ $(".closeMenu").on('click',function(){
 	hideAllMenu();
 })
 
-$('.workers').on('click',function(){
-	hideAllMenu();
-	$('.workerMenu').show();
-})
+
 
 		$(".financeLine").attr("points", "0,200 ");
 
@@ -99,10 +93,7 @@ function dayFunction(){
 
 dayFunction();
 
-$(".finance").click(function(){
-	hideAllMenu();
-	$(".financeMenu").show()
-})
+
 
 
 //////////////////////////////////////
@@ -160,7 +151,6 @@ function financeLine(){
 	}else if(moneyCount <= -1000000){
 		y=400;
 	}
-	console.log(y)
 
 		var currentPoints = $(".financeLine").attr("points");
 			x += 50;
@@ -185,4 +175,25 @@ $(".plus").click(function(){
 	$(".moneyCountNumber").text(+money + 100000);
 })
 
+//////////////////////////////////////////////////////
+//Открытие ..Menu после клика на соответсвующий блок
 
+$(".blockLink").on('click', function(){
+	for(i = 0; i < $('.blockLink').length; i++){
+		if($(".blockMenu").eq(i).data("menu") == $(this).data("menu")){
+			hideAllMenu();
+			$(".blockMenu").eq(i).show();
+		}
+	}
+})
+
+
+
+/////////////////////////////////////////////////////////
+//Effort Val
+
+setInterval(function(){ 					
+	var rangeVal = $('.rangeInput').val()
+	$(".rangePercent").html(rangeVal); // Устанавливает значение % в effort
+	
+}, 10);
