@@ -197,3 +197,24 @@ setInterval(function(){
 	$(".rangePercent").html(rangeVal); // Устанавливает значение % в effort
 	
 }, 10);
+
+
+////////////////////////////////////////////////////////////////
+//// Создание нового проекта
+
+
+$(".proejctAccept").on('click',function(){
+
+	var takeName = $('#nameProject').val();
+	var typePr = $('.typeProject').val()
+
+
+	if(takeName != ""){
+			$('.historyTable').append('<tr><td>'+ $('#nameProject').val() +'</td><td>'+ typePr  +'</td><td>'+ 'UNDEF' +'</td><td>'+ 'come soon' +'</td></tr>')
+
+		// $('#nameProject').val("")
+	}
+
+	
+});
+

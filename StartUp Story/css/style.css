@@ -63,6 +63,7 @@ body{
 	background: gray;
 	text-align: center;
 	padding-top: 20px;
+    padding-bottom: 25px;
 	margin: 50px auto;
 	display: none;
 }
@@ -97,6 +98,18 @@ body{
 	font-size: 32px;
     cursor: pointer;
 	height: 40px;
+}
+
+.proejctAccept::selection{
+	background: none;
+}
+
+.proejctAccept:hover{
+	background: #066606;
+}
+
+.proejctAccept:active{
+	background: #0c550c;
 }
 
 .projectClose{
@@ -326,10 +339,10 @@ body{
 .historyMenu{
 	display: none;
 	width: 1300px;
-	height: 200px;
     margin: 50px auto;
 	background: #5057b3;	
-	position: relative;
+	position: relative;    
+	padding-bottom: 2px;
 	border-radius: 15px;
 	padding-top: 2px;
 }
@@ -345,16 +358,21 @@ body{
 .historyTable{
 	border: 1px solid black;
 	margin: 0 auto;
+	
 }
 
+.historyTable tr td{
+	background: #393f86;
+}
 .historyTableWrap{
 	width: 1000px;
     margin: 40px auto;
-	font-size: 40px;
+	font-size: 50px;
 }
 
 .historyTable td{
 	border: 1px solid black;
 	width: 325px;
+	word-break: normal;
 	text-align: center;
 }
