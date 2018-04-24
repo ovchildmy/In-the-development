@@ -46,6 +46,7 @@ function hideAllMenu(){
 	$(".projectMenu").hide();
 	$('.workerMenu').hide();
 	$('.historyMenu').hide();
+	$('.marketingMenu').hide();
 	$('.financeMenu').hide();
 }
 
@@ -210,11 +211,17 @@ $(".proejctAccept").on('click',function(){
 
 
 	if(takeName != ""){
-			$('.historyTable').append('<tr><td>'+ $('#nameProject').val() +'</td><td>'+ typePr  +'</td><td>'+ 'UNDEF' +'</td><td>'+ 'come soon' +'</td></tr>')
+			$('.historyTableProjects').append('<tr><td class="nameProjectTd">'+ $('#nameProject').val() +'</td><td>'+ typePr  +'</td><td>'+ 'UNDEF' +'</td><td>'+ 'come soon' +'</td></tr>')
 
-		// $('#nameProject').val("")
+		$('#nameProject').val("")
 	}
 
 	
 });
 
+//////////////////////////////////
+///// Option в маркетинге
+
+
+console.log($(".nameProjectTd"))
+// $('.marketingSelectProject').append()

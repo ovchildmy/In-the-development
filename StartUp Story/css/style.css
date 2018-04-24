@@ -355,13 +355,13 @@ body{
     cursor: pointer;
 }
 
-.historyTable{
+.historyTable, .historyTableProjects{
 	border: 1px solid black;
 	margin: 0 auto;
 	
 }
 
-.historyTable tr td{
+.historyTable tr td , .historyTableProjects tr td {
 	background: #393f86;
 }
 .historyTableWrap{
@@ -370,9 +370,62 @@ body{
 	font-size: 50px;
 }
 
-.historyTable td{
+.historyTable td, .historyTableProjects td{
 	border: 1px solid black;
 	width: 325px;
 	word-break: normal;
 	text-align: center;
+}
+
+.historyTable td{
+	width: 325px;
+}
+
+.historyTableProjects td{
+	width: 325px;
+	font-size: 25px;
+}
+
+.marketing{
+    background: #5057b3;
+	width: 204px;
+    cursor: pointer;
+    height: 61px;
+    padding-left: 39px;
+    padding-right: 12px;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.marketingSpan{
+    transform: skewX(52deg);
+}
+
+.marketingMenu{
+	display: none;
+	margin: 50px auto;
+	position: relative;
+	width: 1300px;
+	height: 500px;
+	background: #5057b3;
+	border-radius: 15px;
+}
+
+.marketingClose{
+	position: absolute;
+    right: 15px;
+    top: 9px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.marketingSelectProject{
+	width: 200px;
+	height: 40px;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 30px;
 }
