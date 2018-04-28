@@ -361,7 +361,7 @@ body{
 	
 }
 
-.historyTable tr td , .historyTableProjects tr td {
+.historyTable tr td, .historyTableProjects tr td {
 	background: #393f86;
 }
 .historyTableWrap{
@@ -409,8 +409,9 @@ body{
 	margin: 50px auto;
 	position: relative;
 	width: 1300px;
-	height: 500px;
 	background: #5057b3;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	border-radius: 15px;
 }
 
@@ -422,10 +423,42 @@ body{
     cursor: pointer;
 }
 
-.marketingSelectProject{
+.marketingSelectProject, .marketingFamousProject{
 	width: 200px;
 	height: 40px;
 	font-size: 30px;
 	margin-left: 50px;
 	margin-top: 30px;
+}
+
+.marketingPriceDiv{
+	display: inline-block;
+	font-size: 30px;
+    margin-left: 170px;
+}
+
+.marketingAccept{
+    position: absolute;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    top: 83px;
+    right: 60px;
+    border-radius: 5px;
+    background: #3e3aae;
+}
+
+.marketingFamousProject{
+	margin-left: 160px;
+}
+
+
+.marketingAccept:hover{
+	background: #2C2994;
+}
+
+.marketingAccept:active{
+	background: #211E71;
 }

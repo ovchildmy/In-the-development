@@ -211,17 +211,68 @@ $(".proejctAccept").on('click',function(){
 
 
 	if(takeName != ""){
-			$('.historyTableProjects').append('<tr><td class="nameProjectTd">'+ $('#nameProject').val() +'</td><td>'+ typePr  +'</td><td>'+ 'UNDEF' +'</td><td>'+ 'come soon' +'</td></tr>')
 
+			$('.historyTableProjects').append('<tr class="projectTr project_'+takeName+'"><td class="nameProjectTd">'+ $('#nameProject').val() +'</td><td>'+ typePr  +'</td><td class="famousProject">'+ '-' +'</td><td>'+ 'come soon' +'</td></tr>')
 		$('#nameProject').val("")
+
+
+	//////
+	///Добавление в маркетинг
+			
+		$('.marketingSelectProject').append('<option>'+ takeName +'</option>')
 	}
+
+
+
 
 	
 });
 
+
 //////////////////////////////////
-///// Option в маркетинге
+/// Price в маркетинге
 
 
-console.log($(".nameProjectTd"))
-// $('.marketingSelectProject').append()
+setInterval(function(){
+	if($('.marketingFamousProject').val() == 'Village'){
+		$(".marketingPrice").text('1000$')
+	}else if($('.marketingFamousProject').val() == 'City'){
+		$(".marketingPrice").text('10000$')
+	}else if($('.marketingFamousProject').val() == 'Country'){
+		$(".marketingPrice").text('100000$')
+	}else if($('.marketingFamousProject').val() == 'Continent'){
+		$(".marketingPrice").text('1000000$')
+	}else if($('.marketingFamousProject').val() == 'World'){
+		$(".marketingPrice").text('30000000$')
+	}
+
+}, 100)
+
+
+//famousProject
+
+
+/////////////////////////////////
+/// Маркетинг Accept
+
+
+$(".marketingAccept").on('click',function(){
+	projectVal = $('.marketingSelectProject').val()
+	// if($('.moneyCountNumber').text() >= $(".marketingPrice").text()){
+
+	// }
+
+	//project_
+
+	for(i = 0; i< $('.projectTr').length; i++){
+			// console.log($('.projectTr').eq(i).attr('class'))
+		if($('.projectTr').eq(i).attr('class') == 'projectTr project_'+projectVal && $(".famousProject").parent().eq(i).attr('class') == $('.projectTr').eq(i).attr('class')){
+			console.log($('.projectTr').eq(i).attr('class'));
+			// $('.projectTr').eq()
+			$(".famousProject").eq(i).text($(".marketingFamousProject").val())
+		}
+	}
+
+	// console.log($(".famousProject").parent().attr('class'))
+
+})
