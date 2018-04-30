@@ -45,7 +45,6 @@ $('.startNextBut').on('click', function(){
 
 })
 
-
 function hideAllMenu(){
 	$(".projectMenu").hide();
 	$('.workerMenu').hide();

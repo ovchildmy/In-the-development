@@ -5,6 +5,9 @@ function financeLine(){
 	var moneyCount = parseInt($(".moneyCountNumber").text());
 	var y = moneyCount;
 	var followChange = 1;
+	var financeLineWidthPx = $(".financeLine").css('width');
+	var financeLineWidth = parseInt(financeLineWidthPx)
+
 
 	if(moneyCount <= 100 && moneyCount>=0){
 		followChange = 1;
@@ -63,9 +66,17 @@ function financeLine(){
 		$(".polylineBlock").css("margin-left", marginLeft-50)
 	}
 
+
+
+
+	$(".financeLine").css('width', +financeLineWidth+50)
+
 }
 
+setInterval(function(){
+console.log($(".financeLine").css('width'))
 
+},1000)
 
 $(".minus").click(function(){
 	var money = $(".moneyCountNumber").text();
