@@ -1,0 +1,71 @@
+.historyTableWrap{
+	width: 1000px;
+    margin: 40px auto;
+	font-size: 50px;
+}
+
+.historyTable td{
+	width: 325px;
+}
+
+.historySpan{
+    transform: skewX(52deg);
+}
+
+.history{
+    background: #5057b3;
+	width: 204px;
+    cursor: pointer;
+    height: 61px;
+    margin-top: 60px;
+    padding-left: 51px;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.historyMenu{
+	display: none;
+	width: 1300px;
+    margin: 50px auto;
+	background: #5057b3;	
+	position: relative;    
+	padding-bottom: 2px;
+	border-radius: 15px;
+	padding-top: 2px;
+}
+
+.historyClose{
+	position: absolute;
+    right: 15px;
+    top: 9px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.historySpan{
+    transform: skewX(52deg);
+}
+
+.historyTable, .historyTableProjects{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.historyTable tr td, .historyTableProjects tr td {
+    background: #393f86;
+}
+
+.historyTable td, .historyTableProjects td{
+    border: 1px solid black;
+    width: 325px;
+    word-break: normal;
+    text-align: center;
+}
+
+.historyTableProjects td{
+    width: 325px;
+    font-size: 25px;
+}

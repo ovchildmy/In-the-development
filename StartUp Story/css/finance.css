@@ -1,0 +1,57 @@
+.financeMenu{
+	width: 720px;
+    margin: 50px auto;
+    display: none;
+    position: relative;
+    background: #475f2b;
+    height: 550px;
+    border-radius: 15px;
+}
+
+.financeGraphWrap{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 500px;
+	height: 400px;
+	margin: auto;    
+	background: linear-gradient(rgb(45, 155, 43),rgb(179, 9, 9));
+	border-left: 3px solid black;
+}
+
+.financeGraphLine{
+	position: absolute;
+}
+
+.financeGraph{
+	position: relative;
+	height: 400px;
+}
+
+.financeClose{
+	position: absolute;
+    right: 15px;
+    top: 9px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.finance{
+    background: #5057b3;
+	width: 204px;
+    cursor: pointer;
+    height: 61px;
+    padding-left: 51px;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.financeSpan{
+    transform: skewX(52deg);
+}

@@ -1,0 +1,76 @@
+.marketing{
+    background: #5057b3;
+	width: 204px;
+    cursor: pointer;
+    height: 61px;
+    padding-left: 39px;
+    padding-right: 12px;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.marketingSpan{
+    transform: skewX(52deg);
+}
+
+.marketingMenu{
+	display: none;
+	margin: 50px auto;
+	position: relative;
+	width: 1300px;
+	background: #5057b3;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 15px;
+}
+
+.marketingClose{
+	position: absolute;
+    right: 15px;
+    top: 9px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.marketingSelectProject, .marketingFamousProject{
+	width: 200px;
+	height: 40px;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.marketingPriceDiv{
+	display: inline-block;
+	font-size: 30px;
+    margin-left: 170px;
+}
+
+.marketingAccept{
+    position: absolute;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    top: 83px;
+    right: 60px;
+    border-radius: 5px;
+    background: #3e3aae;
+}
+
+.marketingFamousProject{
+	margin-left: 160px;
+}
+
+
+.marketingAccept:hover{
+	background: #2C2994;
+}
+
+.marketingAccept:active{
+	background: #211E71;
+}

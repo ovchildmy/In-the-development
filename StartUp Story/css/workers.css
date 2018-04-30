@@ -1,0 +1,82 @@
+.workers{
+    background: #5057b3;
+	width: 204px;
+    cursor: pointer;
+    height: 61px;
+    padding-left: 51px;
+    transform: skewX(-52deg);
+    font-size: 40px;
+    color: black;
+   	margin-left: 120px;
+    display: inline-block;
+}
+
+.workersSpan{
+    transform: skewX(52deg);
+}
+
+.workerMenu{
+	width: 500px;
+	background: gray;
+	border-radius: 15px;
+	text-align: center;
+	margin: 50px auto;    
+	font-size: 40px;
+	display: none;
+}
+
+.workerMenuHeader{
+	border-bottom: 1px solid black;
+	border-radius: 15px 15px 0 0;
+	font-size: 45px;
+	background: #6d6c6c;
+	font-weight: bold;
+}
+
+.workerMenuHire{
+	border-top: 1px solid black;
+	margin-bottom: 5px;
+	background: #6d6c6c;
+}
+
+.workBox{
+	width: 20px;
+	cursor: pointer;
+	height: 20px;
+	margin-left: 40px;	
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.workBox:active{
+	background: black;
+}
+
+.workersSalary{
+	color: #840101;
+}
+
+.workerLvl{
+	font-size: 20px;
+	color: #535353;
+}
+
+.workerMenu>input{
+	width: 400px;
+	cursor: pointer;
+}
+
+.workerSalary{
+	color: #004400;
+}
+
+.workerMenuClose{
+	border-top: 1px solid black;
+	background: #6d6c6c;
+	border-radius: 0 0 15px 15px;
+	cursor: pointer;
+}
+
+.workers{
+	cursor: pointer;
+}
