@@ -20,7 +20,7 @@ $(".proejctAccept").on('click',function(){
 
 	if(takeName != ""){
 
-			$('.historyTableProjects').append('<tr class="projectTr project_'+takeName+'"><td class="nameProjectTd">'+ $('#nameProject').val() +'</td><td>'+ typePr  +'</td><td class="famousProject">'+ '-' +'</td><td>'+ 'come soon' +'</td></tr>')
+			$('.historyTableProjects').append('<tr class="projectTr project_'+takeName+'"><td class="nameProjectTd">'+ $('#nameProject').val() + "<span class='effortProject' title='effort'> ("+ $(".rangeInput").val() +")</span>" +'</td><td>'+ typePr  +'</td><td class="famousProject">'+ '-' +'</td><td>'+ 'come soon' +'</td></tr>')
 		$('#nameProject').val("")
 
 

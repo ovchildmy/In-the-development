@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/marketing.css">
 	<link rel="stylesheet" type="text/css" href="css/projects.css">
 	<link rel="stylesheet" type="text/css" href="css/workers.css">
+	<link rel="shortcut icon" href="img/favicon.png" type="img/png">
 	<title>StartUp</title>
 	<meta charset="utf-8">
 </head>
@@ -20,12 +21,27 @@
 		<div class="startNextBut">-></div>
 	</div>
 
+	<div class="startMenuWrap">																				<!--	startMenu  -->
+		<div class="startMenu">
+			<div class="startGame">Start</div>
+			<div class="loadGame">Load</div>
+		</div>
+	</div>																		
+
 	<div class="header">
 		<div class="productCount" title="Products"><span class="projectCount">0</span>P</div>
 		<div class="fanCount" title="Fans"><span>0</span>F</div>
-		<div class="workerCount" title="Workers"><span>0</span>W</div>
+		<div class="workerCount" title="Workers">0W</div>
 		<div class="moneyCount" title="Money"><span class="moneyCountNumber">1000</span>$</div>
 		<div class="currentDay">1</div>
+	</div>
+
+	<div> 																									<!-- Save Warning -->
+				
+	</div>
+
+	<div class="saveBlock">																						<!-- Save блок -->
+		<img class="saveImg" title="Save" src="img/saveImg.png">	
 	</div>
 
 	<div class="dayBar">
@@ -44,7 +60,10 @@
 		<div class="marketing blockLink" data-menu="marketing"><div class="marketingSpan">Marketing</div></div>
 	</div>
 
-	<div class="projectMenu blockMenu" data-menu="projects">
+
+
+
+	<div class="projectMenu blockMenu" data-menu="projects">								<!--  		projectMenu			-->
 		<input id="nameProject" type="text" placeholder="Name project">
 		<select class="typeProject">
 			<option disabled>Type project</option>
@@ -63,19 +82,20 @@
 		<div class="projectClose closeMenu">Close</div>
 	</div>
 
-	<div class="workerMenu blockMenu" data-menu="workers">
-		<div class="workerMenuHeader">The current state:</div>
-		<div class="workersSalary">y$ per day salary</div>
-		<div>fire worker<div class="workBox"></div></div>
+
+
+	<div class="workerMenu blockMenu" data-menu="workers">										<!--  		workerMenu			-->
+		<div class="workerMenuHeader">The current state: <span class="currentState">0</span></div>
+		<div class="workersSalary"><span class="salary">0</span>$ per day salary</div>
+		<div>fire worker<div class="fire workBox"></div></div>
+		<div><input type="text" data-action="fire" class="fireInput workInput" placeholder="a few workers"> <button data-action="fire" class="fireButton buttonWork"></button></div>
 		<div class="workerMenuHire">Hire</div>
-		<div class="workerLvl">level worker</div>
-		<input type="range">
-		<div class="workerSalary">salary per day = $</div>
-		hire worker<div class="workBox"></div>
+		hire worker<div class="hire workBox"></div>
+		<div><input type="text" data-action="hire" class="hireInput workInput" placeholder="a few workers"> <button data-action="hire" class="hireButton buttonWork"></button></div>
 		<div class="workerMenuClose closeMenu">Close</div>
 	</div>
 
-	<div class="financeMenu blockMenu" data-menu="finance">
+	<div class="financeMenu blockMenu" data-menu="finance">										<!--  		financeMenu			-->
 		<div  class="financeGraphWrap">
 			<div class="financeGraph">
 					<svg width='500px' height="400px">
@@ -112,7 +132,7 @@
 		<div class="financeClose closeMenu">X</div>
 	</div>
 
-	<div class="historyMenu blockMenu" data-menu="history">
+	<div class="historyMenu blockMenu" data-menu="history"> 								<!--  		historyMenu			-->
 		
 		<div class="historyTableWrap">
 			<table class="historyTable">
@@ -130,7 +150,7 @@
 		<div class="historyClose closeMenu">X</div>
 	</div>
 
-	<div class="marketingMenu blockMenu" data-menu="marketing">
+	<div class="marketingMenu blockMenu" data-menu="marketing">								<!--  		marketingMenu			-->
 		<select class="marketingSelectProject">
 			<option disabled>Project</option>
 		</select>
@@ -153,6 +173,7 @@
 	<script type="text/javascript" src="js/finance.js"></script>
 	<script type="text/javascript" src="js/project.js"></script>
 	<script type="text/javascript" src="js/marketing.js"></script>
+	<script type="text/javascript" src="js/workers.js"></script>
 
 </body>
 </html>

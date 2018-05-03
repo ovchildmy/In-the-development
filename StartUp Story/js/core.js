@@ -80,6 +80,7 @@ function dayFunction(){
 
 		if($(".dayStatus").css('width') == "1300px"){
 			financeLine();
+			salaryToWorkers();
 			$(".dayStatus").css('width', '0px');
 			$(".currentDay").html(+currentDay+1)
 
@@ -92,11 +93,10 @@ function dayFunction(){
 			month = 1;
 			year += 1;
 		}
-		$(".currentDay").attr('title', year+' year, '+ month+' month, '+ day+' day')
+		$(".currentDay").attr('title', year+' year, '+ month+' month, '+ day+' day');
 	},12)
 }
 
-dayFunction();
 
 //////////////////////////////////////////////////////
 //Открытие Menu после клика на соответсвующий блок
@@ -109,4 +109,79 @@ $(".blockLink").on('click', function(){
 		}
 	}
 })
+
+///////////////////////////////
+///Начало игры
+
+
+var dayStatusFunc = setInterval(function(){	if($('.startMenuWrap').css("display") != "none"){$('.dayStatus').css("width", 0)}},30);
+
+setInterval(function(){	if($('.startMenuWrap').css("display") != "none"){$('.dayStatus').css("width", 0)}},30)
+
+$('.startGame').on('click',function(){
+	$('.startMenuWrap').hide();
+	$('.moneyCountNumber').text(1000);
+	clearInterval(dayStatusFunc);
+	dayFunction();
+
+
+})
+
+
+////////////////////////////
+/// Сохранение игры 
+
+$('.saveImg').on('click',function(){
+	var workerCount = $(".workerCount").text();
+	workerCount = parseInt(workerCount);
+	var fanCount = $(".fanCount").text();
+	fanCount = parseInt(fanCount);
+
+
+	localStorage.setItem("money", +$('.moneyCountNumber').text())
+	localStorage.setItem("day", +$(".currentDay").text())
+	localStorage.setItem("fans", fanCount)
+	localStorage.setItem("products", +$('.projectCount').text())
+	localStorage.setItem("workers", workerCount);
+
+
+	///////////// Day title
+
+	var dayTitle = $(".currentDay").attr("title");
+	localStorage.setItem("dayTitle", dayTitle);
+
+})
+
+
+//////////////////////////////
+/// Загрузка игры
+
+
+$(".loadGame").on("click",function(){
+	$('.startMenuWrap').hide();
+	clearInterval(dayStatusFunc);
+	dayFunction();
+
+	var money = localStorage.getItem("money"); 	   //----
+	var day = localStorage.getItem("day");			 ////
+	var fans = localStorage.getItem("fans");			//
+	var products = localStorage.getItem("products"); 	//	Загрузка headr`a
+	var workers = localStorage.getItem("workers");		//
+	$('.moneyCountNumber').text(money);					//
+	$('.currentDay').text(day);							//
+	$('.fanCount').text(fans+"F");						//
+	$('.projectCount').text(products);				 ///
+	$('.workerCount').text(workers+"W"); 			//----
+
+
+
+	///////////// Day title
+
+	var dayTitle = localStorage.getItem("dayTitle");
+	$(".currentDay").attr("title", dayTitle);
+
+
+	console.log(money)
+})
+	
 

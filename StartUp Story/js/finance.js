@@ -74,7 +74,7 @@ function financeLine(){
 }
 
 setInterval(function(){
-console.log($(".financeLine").css('width'))
+// console.log($(".financeLine").css('width'))
 
 },1000)
 
