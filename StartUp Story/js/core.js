@@ -65,7 +65,7 @@ $(".financeLine").attr("points", "0,200 ");
 
 var x = 0;
 
-function dayFunction(){
+function dayFunction(speed){
 	var day;
 	var month = 0;
 	var year = 0;
@@ -75,10 +75,13 @@ function dayFunction(){
 		var currentWidthNumber = parseInt(currentWidth);
 		var currentDay = $(".currentDay").html();
 		day = currentDay;
-		var newWidth = currentWidthNumber + 1;
+		var newWidth = currentWidthNumber + speed;
 		$(".dayStatus").css('width', newWidth);
 
-		if($(".dayStatus").css('width') == "1300px"){
+	console.log(speed)
+		
+
+		if($(".dayStatus").css('width') == "1300px" || $(".dayStatus").css('width') == "1302px"){
 			financeLine();
 			salaryToWorkers();
 			$(".dayStatus").css('width', '0px');
@@ -98,6 +101,32 @@ function dayFunction(){
 }
 
 
+//////////////////////////////////////////////////
+//// Пауза
+
+$('.pause').on('click', function(){
+	dayFunction(0)
+})
+
+
+//////////////////////////////////////////////////
+//// Первая скорость
+
+$('.firstSpeed').on('click', function(){
+	dayFunction(1)
+})
+
+
+//////////////////////////////////////////////////
+//// Вторая скорость
+
+$('.secondSpeed').on('click', function(){
+	dayFunction(3)
+})
+
+
+
+
 //////////////////////////////////////////////////////
 //Открытие Menu после клика на соответсвующий блок
 
@@ -113,10 +142,10 @@ $(".blockLink").on('click', function(){
 ///////////////////////////////
 ///Начало игры
 
+var dayStatusCurrent = $('.dayStatus').css("width");
+var dayStatusFunc = setInterval(function(){	if($('.startMenuWrap').css("display") != "none"){$('.dayStatus').css("width", dayStatusCurrent)}},30);
 
-var dayStatusFunc = setInterval(function(){	if($('.startMenuWrap').css("display") != "none"){$('.dayStatus').css("width", 0)}},30);
-
-setInterval(function(){	if($('.startMenuWrap').css("display") != "none"){$('.dayStatus').css("width", 0)}},30)
+setInterval(function(){	if($('.startMenuWrap').css("display") != "none"){$('.dayStatus').css("width", dayStatusCurrent)}},10)
 
 $('.startGame').on('click',function(){
 	$('.startMenuWrap').hide();
@@ -136,7 +165,11 @@ $('.saveImg').on('click',function(){
 	workerCount = parseInt(workerCount);
 	var fanCount = $(".fanCount").text();
 	fanCount = parseInt(fanCount);
+	$('.saveWarning').show()
 
+	setTimeout(function(){
+		$('.saveWarning').hide()
+	},2000)
 
 	localStorage.setItem("money", +$('.moneyCountNumber').text())
 	localStorage.setItem("day", +$(".currentDay").text())
@@ -185,3 +218,9 @@ $(".loadGame").on("click",function(){
 })
 	
 
+////////////////////////////////////
+/// Menu Link
+
+$(".menuLink").on('click',function(){
+	$(".startMenuWrap").show();
+})

@@ -6,11 +6,57 @@ function hideAllMenu(){
 	$(".foodMenu").hide();
 }
 
-$(".startGame").on("click", function(){
+$(".startGame").on("click", function(){   										// Старт новой игры
 	$(".mainMenu").hide();
 	$(".header").show();
 	$(".needsBlocks").show();
+	$(".saveBlock").show();
 })
+
+
+$(".saveBlock").on('click',function(){
+	var money = +$(".money__cash").text();
+	var foodRowStatus = $(".foodRowStatus").css("width");
+	foodRowStatus = parseInt(foodRowStatus);
+	var healthRowStatus = $(".healthRowStatus").css("width");
+	healthRowStatus = parseInt(healthRowStatus);
+	var resRowStatus = $(".resRowStatus").css("width");
+	resRowStatus = parseInt(resRowStatus);
+	var energyRow = $(".energyRow").css("width");
+	energyRow = parseInt(energyRow);
+
+	var money = +$(".money__cash").text();
+	var money = +$(".money__cash").text();
+
+	console.log(foodRowStatus)
+
+	localStorage.setItem("lastGameMoney", money);
+	localStorage.setItem("lastGameFood", foodRowStatus);
+	localStorage.setItem("lastGameHealth", healthRowStatus);
+	localStorage.setItem("lastGameRespect", resRowStatus);
+	localStorage.setItem("lastGameEnergy", energyRow);
+
+	$(".mainMenu").hide();
+	$(".header").show();
+	$(".needsBlocks").show();
+	$(".saveBlock").show();
+})
+
+$('.continueGame').on('click', function(){									// Загрузка прежней (последней) игры
+	var money = localStorage.getItem("lastGameMoney");
+	var food = localStorage.getItem("lastGameFood");
+	var health = localStorage.getItem("lastGameHealth");
+	var respect = localStorage.getItem("lastGameRespect");
+	var energy = localStorage.getItem("lastGameEnergy");
+
+	$(".money__cash").text(money);
+	$(".foodRowStatus").css({"width": food});
+	$(".healthRowStatus").css({"width": health});
+	$(".resRowStatus").css({"width": respect});
+	$(".energyRow").css({"width": energy});
+})												
+
+
 
 	$(".needBlock").on("click", function(){
 		$(".goodDeedsSecMenu").hide()
@@ -130,72 +176,6 @@ $(".respectArrowBack").click(function(){											 //Действия стре�
 		console.log(123)
 	}
 })
-
-
-
-/*
-
-//////////////////////////////////////
-//////////////////////////////////////
-//////////Функция меню еды////////////
-
-
-
-	$(".buyFood").on("click", function(){ 									
-		var currentWidth = $(".foodRowStatus").css("width"); 
-		currentWidth = parseInt(currentWidth); 
-		currentWidth = (currentWidth/8); 
-		var buyFoodProductName = $(".buyFood").data("product"); 
-		var foodAvailProductName = $(".foodAvail").data("product"); 
-		var foodWidth = $(".foodAvail").children(".foodWidth").text(); 
-		var foodWidthBlock = $(".foodWidth").data("product");
-		foodWidth = parseInt(foodWidth); 
-
-		var foodAvailproductAvail = $(".foodAvail").data("productavail"); 
-		console.log($(".foodRowStatus").css("width")) 
-		
-
-		for(i = 0; i < $(".buyFood").length; i++){
-			if($(".foodAvail").eq(i).data("product") == $(this).data("product")){
-				console.log($(".foodAvail").eq(i))
-				currentWidth += $(".foodAvail").eq(i).data("productavail");			//.children(".foodWidth").text();
-				currentWidth += "%"
-				$(".foodRowStatus").css({"width": currentWidth});	
-		console.log(currentWidth); 
-			}
-		}
-
-}); 
-
-//console.log(currentWidth + ' - Длина StatusRow'); 
-
-
-//////////////////////////////////////
-//////////////////////////////////////
-//////////Функция меню энергии////////
-
-
-$(".energyPerform").on("click", function(){ 
-
-		var currentWidth = $(".energyRowStatus").css("width"); 
-		currentWidth = parseInt(currentWidth); 
-		currentWidth = (currentWidth/8); 
-		
-
-		for(i = 0; i < $(".energyPerform").length; i++){
-			if($(".productivityEnergy").eq(i).data("perform") == $(this).data("perform")){
-				//console.log($(".productivityEnergy").eq(i))
-				var productivityEnergy = $(".productivityEnergy").eq(i).children(".productivityEnergyValue").text()
-				currentWidth += +productivityEnergy;	
-			console.log(typeof(+productivityEnergy)); 
-				currentWidth += "%"
-				$(".energyRowStatus").css({"width": currentWidth});	
-			}
-		}
-
-}); 
-
-*/
 
 
 //////////////////////////////////////
