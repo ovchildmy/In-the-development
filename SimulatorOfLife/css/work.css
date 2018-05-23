@@ -1,0 +1,44 @@
+/*.workGet{
+	display: inline-block;
+    background: black;
+    width: 317px;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    margin-left: 105px;
+}
+
+.workQuit{
+	display: inline-block;
+    background: black;
+    text-align: center;
+    width: 317px;
+    color: white;
+    font-size: 34px;
+    margin-left: 105px;
+}*/
+
+.workGet, .workQuit, .moneyBlock-business, .moneyBlock-other {
+	display: inline-block;
+    background: #16387E;
+    width: 317px;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    margin-left: 105px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.workGet:hover, .workQuit:hover, .moneyBlock-business:hover, .moneyBlock-other:hover{
+	cursor: pointer;
+	background: #0C1F45;
+}
+
+.workGet:active, .workQuit:active, .moneyBlock-business:active, .moneyBlock-other:active {
+	background: #242561;
+}
+
+.uderworking__types{
+	display: none;
+}

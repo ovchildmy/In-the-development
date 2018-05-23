@@ -3,16 +3,27 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="img/cross.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/work.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-	<title></title>
+	<title>SoL</title>
 </head>
 <body>
 
 	<div class="mainMenu">
 		<div class="startGame"><span class="startGameText">Start</span></div>
+		<div class="startGameMenu">
+			<span>Game 1</span>
+			<span>Game 2</span>
+			<span>Game 3</span>
+		</div>
 		<div class="continueGame"><span class="continueGameText">Continue</span></div>
 		<div class="LoadGame"><span class="LoadGameText">Load</span></div>
 		<div class="linkToMeBlock"><a class="linkToMe" href="https://vk.com/ovchildmy">vk.com/ovchildmy</a></div>
+		<div class="loadMenu">													<!-- Load Menu -->
+			<span class="saveRow" data-saverow="1">Load 1</span>
+			<span class="saveRow" data-saverow="2">Load 2</span>
+			<span class="saveRow" data-saverow="3">Load 3</span>
+		</div>
 	</div>
 
 	<div class="header"> 										<!-- НАЧАЛО HEADER`A -->
@@ -63,6 +74,11 @@
 
 			<div class="nextDay">NEXT</div>			
 	</div> 														<!-- КОНЕЦ HEADER`A -->
+
+	<div class="saveWarning">
+		Game saved
+	</div>
+
 
 
 	<div class="saveBlock">												<!-- Save блок -->
@@ -342,7 +358,7 @@
 			<div class="moneyBlock-business">Go into business</div>
 			<div class="moneyBlock-other">Uderworking</div>
 
-			<div>
+			<div class="uderworking__types">
 				<div>Transfer bags</div>
 				<div>Help on construction site</div>
 				<div>Distribute flyers</div>

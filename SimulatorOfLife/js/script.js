@@ -6,11 +6,23 @@ function hideAllMenu(){
 	$(".foodMenu").hide();
 }
 
-$(".startGame").on("click", function(){   										// Старт новой игры
+function openCloseFunc(){ 													//Закрывает гл меню и открывает игру
 	$(".mainMenu").hide();
 	$(".header").show();
 	$(".needsBlocks").show();
 	$(".saveBlock").show();
+}
+
+$(".startGameText").on("click", function(){   										// Старт новой игры
+	$(".startGame").hide();
+	$(".continueGame").hide();
+	$(".LoadGame").hide();
+	$(".linkToMeBlock").hide();
+	$(".startGameMenu").show();
+})
+
+$(".startGameMenu > span").on('click',function(){
+	openCloseFunc();
 })
 
 
@@ -22,27 +34,40 @@ $(".saveBlock").on('click',function(){
 	healthRowStatus = parseInt(healthRowStatus);
 	var resRowStatus = $(".resRowStatus").css("width");
 	resRowStatus = parseInt(resRowStatus);
-	var energyRow = $(".energyRow").css("width");
-	energyRow = parseInt(energyRow);
+	var energyRowStatus = $(".energyRowStatus").css("width");
+	energyRowStatus = parseInt(energyRowStatus);
 
 	var money = +$(".money__cash").text();
-	var money = +$(".money__cash").text();
 
-	console.log(foodRowStatus)
+	// console.log(foodRowStatus)
+
+	$(".saveWarning").css({"display": "block"});
+	setTimeout(function(){
+		$(".saveWarning").css({"display": "none"});
+	},1500)
 
 	localStorage.setItem("lastGameMoney", money);
 	localStorage.setItem("lastGameFood", foodRowStatus);
 	localStorage.setItem("lastGameHealth", healthRowStatus);
 	localStorage.setItem("lastGameRespect", resRowStatus);
-	localStorage.setItem("lastGameEnergy", energyRow);
+	localStorage.setItem("lastGameEnergy", energyRowStatus);
 
-	$(".mainMenu").hide();
-	$(".header").show();
-	$(".needsBlocks").show();
-	$(".saveBlock").show();
+	
 })
 
-$('.continueGame').on('click', function(){									// Загрузка прежней (последней) игры
+
+$(".LoadGameText").on("click",function(){										// Load menu
+	$(".startGame").hide();
+	$(".continueGame").hide();
+	$(".LoadGame").hide();
+	$(".linkToMeBlock").hide();
+	$(".loadMenu").show();
+})
+
+// Загрузка определённого сохранения
+
+
+$('.continueGameText').on('click', function(){									// Загрузка прежней (последней) игры
 	var money = localStorage.getItem("lastGameMoney");
 	var food = localStorage.getItem("lastGameFood");
 	var health = localStorage.getItem("lastGameHealth");
@@ -53,7 +78,9 @@ $('.continueGame').on('click', function(){									// Загрузка преж�
 	$(".foodRowStatus").css({"width": food});
 	$(".healthRowStatus").css({"width": health});
 	$(".resRowStatus").css({"width": respect});
-	$(".energyRow").css({"width": energy});
+	$(".energyRowStatus").css({"width": energy});
+
+	openCloseFunc();
 })												
 
 
@@ -130,19 +157,38 @@ $(".goodDeedAgree").click(function(){
 				$(".goodDeedPopupWrap").show();
 				$(".cross").hide();
 				$(".respectArrowBack").hide();
+				$(".goodDeedsMenuWrap").hide();
+				$('.respectMenu').hide();
+
 			}
 
 		}
 	}
 
+
+
 })
 
 $(".goodDeedPopupNo").on('click', function(){
-	$(".goodDeedPopup").unwrap();
+	// $(".goodDeedPopup").unwrap();
 	//$(".goodDeedPopup").wrap("<div class='goodDeedAgreeMenu'></div>")
 	$(".goodDeedPopup").hide();
 	//$(".cross").show();
 	//$(".respectArrowBack").show();
+
+	var goodDeedsMenuWrap = $('.goodDeedsMenuWrap');
+	var badDeedsMenuWrap = $('.badDeedsMenuWrap');
+	var goodDeedsBlock = $('.goodDeedsBlock');
+	var badDeedsBlock = $('.badDeedsBlock');
+
+	$(".respectArrowBack").hide();
+	$(".goodDeedsMenuWrap").hide();
+	$(".badDeedsMenuWrap").hide();
+	$(".deedImg").show();
+	goodDeedsBlock.show();
+	badDeedsBlock.show();
+	$(".goodDeedAgreeMenu").hide()
+
 })
 				//$(".goodDeedPopup").closest(".goodDeedAgreeMenu").unwrap();
 				//console.log(111)
