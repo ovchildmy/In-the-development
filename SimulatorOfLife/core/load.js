@@ -23,7 +23,6 @@ $('.continueGameText').on('click', function(){									// Загрузка пр�
 	$(".resRowStatus").css({"width": respect});
 	$(".energyRowStatus").css({"width": energy});
 
-	jobStatus = job;
 
 	openCloseFunc();
 })		

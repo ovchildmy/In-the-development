@@ -2,6 +2,7 @@ function hideAllMenu(){
 	$(".healthMenu").hide();
 	$(".respectMenu").hide();
 	$(".moneyMenu").hide();
+	$(".businessMenu").hide();
 	$(".energyMenu").hide();
 	$(".foodMenu").hide();
 }

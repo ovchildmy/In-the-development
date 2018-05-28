@@ -1,0 +1,106 @@
+*{
+    font-family: Roboto Slab;
+}
+
+.businessHeader{
+	height: 124px;
+}
+
+
+.businessMenu{
+	display: none;
+    width: 1400px;
+    height: 700px;
+    background: #1F75FE;
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 41px;
+    text-align: center;
+}
+
+.prList, .companyName, .profPerMonth{
+	display: inline-block;
+}
+
+.prList{
+	float: left;
+}
+
+.prList > div{
+	cursor: pointer;
+}
+
+.projectsList{
+	margin-top: 15px;
+}
+
+.profPerMonth{
+	float: right;
+}
+
+
+
+.workerMenu{
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.prMenu{
+	border: 1px solid black;
+	display: inline-block;
+	position: relative;
+}
+
+.startDevelop{
+    background: #0043ff;
+	border-radius: 5px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;    
+	margin: 0 auto;
+	width: 403px;
+}
+
+.currentPrMenu{
+	border: 1px solid black;
+	display: inline-block;
+}
+
+.businessMiddle{
+	height: 381px;
+	display: flex;
+}
+
+.businessMiddle > div{
+	box-sizing: border-box;
+	height: 380px;
+	margin: 0 auto;
+	width: 32%;
+
+}
+
+.businessMiddle table{
+	margin: 0 auto;
+}
+
+.productSpanBusiness, .projectSpanBusiness{
+    font-size: 31px;
+    cursor: pointer;
+    background: #0043ff;
+    border-radius: 5px;
+}
+
+.businessMiddle input{
+    width: 200px;
+    height: 27px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.curPrTable{
+	width: 430px;
+	
+}

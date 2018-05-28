@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="img/cross.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/work.css">
+	<link rel="stylesheet" type="text/css" href="css/business/mainTheme.css">
 	<link rel="stylesheet" type="text/css" href="css/underworking.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<title>SoL</title>
@@ -352,11 +353,9 @@
 			</div>
 
 <!-- НАЧАЛО СПИСКА ЗАРАБОТКА -->
-		<div class="moneyMenu divMenu" data-blockmenu="m">
-			<div class="moneyBlock-work">
-				<div class="workGet">Get a job</div>
-				<div class="workQuit">Quit your job</div>
-			</div>
+		<div class="moneyMenu divMenu" data-blockmenu="m">	
+			<div class="workGet">Get a job</div>
+			<div class="workQuit">Quit your job</div>
 			<div class="moneyBlock-business">Go into business</div>
 			<div class="moneyBlock-other">Uderworking</div>
 
@@ -367,12 +366,98 @@
 				<div>Day in fast food cafe</div>
 			</div>
 
-			<div class="businessMenu"> 									<!-- Бизнес Меню -->
-				
-			</div>
 
 			<img src="img/Cross.png" class="moneyCross cross">
 		</div>
+			
+
+		<div class="businessMenu"> 									<!-- Бизнес Меню -->
+			<div class="businessHeader">													<!-- Верхний блок business`a -->
+					<div class="prList">
+					<div class="productsList">Products list</div>
+					<div class="projectsList">Projects list</div>
+				</div>
+				<div class="companyName">Your company</div>
+				<div class="profPerMonth">
+					Profit per month:
+					<br>
+					<span class="profPerMonthCount">0</span>$
+				</div>
+			</div>																			<!-- Верхний блок business`a КОНЕЦ -->
+
+
+
+
+			<div class="businessMiddle">													<!-- Средний блок business`a -->
+
+
+				<div class="workerMenu">
+					<div class="workerHeader">
+						Workers: <br>
+						<span class="workersCount"></span>
+					</div>
+					<div>
+						Hire 
+						<input type="text" placeholder="count">
+						<div>Agree</div>									<!-- Галочка тут. (заменить на IMG или ещё что) -->
+					</div>
+					<div>
+						Fire
+						<input type="text" placeholder="count">
+						<div>Agree</div>									<!-- Галочка тут. (заменить на IMG или ещё что) -->
+					</div>
+					<div>
+						Solary per month:
+						<br>
+						<span class="workersSolary"></span>$
+					</div>
+				</div>
+
+
+				<div class="prMenu">								<!-- Блок проекта -->
+					<div class="prHeader">
+						<span class="productSpanBusiness">Product</span>
+						<input type="text" placeholder="name pr." class="namePr">
+						<span class="projectSpanBusiness">Project</span>
+					</div>
+					<div>
+						<select>
+							<option></option>
+						</select>
+						<input class="budgetBusiness" type="text" placeholder="budget" name="">
+					</div>
+
+					<div class="startDevelop">to start developing</div>
+				</div>												<!-- Блок проекта КОНЕЦ -->
+
+
+
+				<div class="currentPrMenu">														<!-- Текущие проекты -->
+					<div>Current projects:</div>
+
+					<table class="curPrTable">
+						<tr>
+							<td>Name</td>
+							<td>Profit</td>
+							<td>Famous</td>
+						</tr>
+					</table>
+					<div>?</div>													<!-- Галочка тут. (заменить на IMG или ещё что) -->
+				</div>														<!-- Текущие проекты КОНЕЦ -->
+
+			</div>																<!-- Средний блок business`a КОНЕЦ -->
+
+
+
+			<div>											<!-- Прогресс проектов -->
+				<div>Progress of pr.</div>
+				<div class="listOfProgress"></div>
+				<div>?</div>														<!-- Галочка тут. (заменить на IMG или ещё что) -->
+			</div>											<!-- Прогресс проектов КОНЕЦ-->	
+
+		</div>												<!-- Бизнес Меню КОНЕЦ -->
+
+
 <!-- КОНЕЦ СПИСКА ЗАРАБОТКА -->
 			
 	
@@ -387,6 +472,7 @@
 	<script type="text/javascript" src="dynamic/crosses.js"></script>
 	<script type="text/javascript" src="dynamic/needBlocks.js"></script>
 	<script type="text/javascript" src="dynamic/respectArrow.js"></script>
+	<script type="text/javascript" src="dynamic/businessNeedBlock.js"></script>
 
 	<script type="text/javascript" src="js/foodMenu.js"></script>
 	<script type="text/javascript" src="js/respectBadDeed.js"></script>
@@ -394,6 +480,9 @@
 	<script type="text/javascript" src="js/job.js"></script>
 	<script type="text/javascript" src="js/buy.js"></script>
 	<script type="text/javascript" src="js/underworking.js"></script>
+
+	<script type="text/javascript" src="business/newPr.js"></script>
+	<script type="text/javascript" src="business/showMenu.js"></script>
 
 	<script type="text/javascript" src="core/nextDay.js"></script>
 	<script type="text/javascript" src="core/saving.js"></script>

@@ -18,9 +18,6 @@ $(".saveBlock").on('click',function(){
 		$(".saveWarning").css({"display": "none"});
 	},1500)
 
-	console.log(jobStatus)
-
-	localStorage.setItem("jobStatus", jobStatus);
 	localStorage.setItem("lastGameMoney", money);
 	localStorage.setItem("lastGameFood", foodRowStatus);
 	localStorage.setItem("lastGameHealth", healthRowStatus);

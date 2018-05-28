@@ -1,18 +1,20 @@
-var jobStatus = false;
+//var jobStatus = false;
 
 $('.workGet').on("click", function(){
-	jobStatus = true;
-	console.log(jobStatus)
+	localStorage.jobStatus = "true";
+	console.log(localStorage.jobStatus)
 })
 
 $('.workQuit').on("click", function(){
-	jobStatus = false;
-	console.log(jobStatus)
+	localStorage.jobStatus = "false";
+	console.log(localStorage.jobStatus)
 })
 
 function jobFunc(){
 	var money = +$('.money__cash').text();
-	if(jobStatus == true){	
+	if(localStorage.jobStatus == "true"){
 		$('.money__cash').text(money+60);
+		console.log(123)
 	}
+
 }

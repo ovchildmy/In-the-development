@@ -29,6 +29,5 @@ $(".nextDay").on("click", function(){
 
 	$(".actionsCount").html(4)
 
-
 	jobFunc();
 })

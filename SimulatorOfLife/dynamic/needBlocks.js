@@ -1,4 +1,5 @@
 $(".needBlock").on("click", function(){
+		hideAllMenu();
 		$(".goodDeedsSecMenu").hide()
 		var needBlock = $(".needBlock");
 		var divMenu = $(".divMenu");
