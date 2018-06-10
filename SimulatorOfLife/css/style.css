@@ -3,7 +3,7 @@ body{
 	margin: 0;
 }
 
-td{
+.fastFood-table td, .cafe-table td, .restaurant-table td, .energy-table td, .health-table td{
 	border: 1px solid #05092e;
 	font-size: 36px;
 	text-align: center;

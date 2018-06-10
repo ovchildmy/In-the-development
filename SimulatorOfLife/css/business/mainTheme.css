@@ -3,14 +3,14 @@
 }
 
 .businessHeader{
-	height: 124px;
+	height: 134px;
 }
 
 
 .businessMenu{
+	position: relative;
 	display: none;
     width: 1400px;
-    height: 700px;
     background: #1F75FE;
     margin: 30px auto;
     border-radius: 15px;
@@ -24,7 +24,15 @@
 }
 
 .prList{
+	background: #1052bc;
+	border-radius: 5px;
+	padding: 5px;
 	float: left;
+}
+
+.productsList{
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
 }
 
 .prList > div{
@@ -43,11 +51,10 @@
 
 .workerMenu{
 	display: inline-block;
-	border: 1px solid black;
+	border-right: 1px solid black;
 }
 
 .prMenu{
-	border: 1px solid black;
 	display: inline-block;
 	position: relative;
 }
@@ -65,13 +72,14 @@
 }
 
 .currentPrMenu{
-	border: 1px solid black;
+	border-left: 1px solid black;
 	display: inline-block;
 }
 
 .businessMiddle{
 	height: 381px;
 	display: flex;
+	margin-top: 10px;
 }
 
 .businessMiddle > div{
@@ -84,6 +92,11 @@
 
 .businessMiddle table{
 	margin: 0 auto;
+	cursor: default;
+}
+
+.productSpanBusiness{
+	border :1px dashed black;
 }
 
 .productSpanBusiness, .projectSpanBusiness{
@@ -91,6 +104,7 @@
     cursor: pointer;
     background: #0043ff;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .businessMiddle input{
@@ -100,7 +114,95 @@
     font-size: 26px;
 }
 
+.curPrTableWrap{
+	height: 270px;
+	overflow: auto;
+}
+
 .curPrTable{
 	width: 430px;
-	
+    border: 1px solid black;
+	font-size: 23px;
+    background: #428bff;
+}
+
+.curPrTable td{
+	border: 1px solid #05092e;
+	text-align: center;
+}
+
+.curPrTable tr:first-child{
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.progressBlock{
+	margin: 30px auto 0;
+}
+
+.progressBlock > div{
+	/*display: inline-block;*/
+	/*margin-top: 24px;*/
+}
+
+.progressRow{
+}
+
+.progressRow, .progressRowStatus{
+	width: 600px;
+	height: 30px;
+	background: gray;
+	border-radius: 15px;
+	display: inline-block;
+    margin: 13px 0 0 50px;
+}
+
+.progressRowStatus{
+	width: 0px;
+	background: yellow;
+}
+
+.release{
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    background: blue;
+    right: 80px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+    padding: 0px 10px 0 10px;
+}
+
+.nameProgress{
+	margin-right: 30px;
+	display: block;
+	position: absolute;
+	width: 350px;
+	word-break: break-all;
+	left: 20px;
+}
+
+.projectOption{
+	display: none;
+}
+
+.prMenu option{
+	text-transform: lowercase;
+	font-size: 41px;
+}
+
+.prMenu select{
+	display: block;
+    font-size: 27px;
+    margin: 30px auto;
+    width: 60%;
+    height: 40px;
+}
+
+.space{
+	width: 100%;
+    margin-top: 15px;
+    height: 54px;
 }

@@ -4,8 +4,8 @@
 	<link rel="stylesheet" type="text/css" href="img/cross.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/work.css">
-	<link rel="stylesheet" type="text/css" href="css/business/mainTheme.css">
 	<link rel="stylesheet" type="text/css" href="css/underworking.css">
+	<link rel="stylesheet" type="text/css" href="css/business/mainTheme.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<title>SoL</title>
 </head>
@@ -373,7 +373,7 @@
 
 		<div class="businessMenu"> 									<!-- Бизнес Меню -->
 			<div class="businessHeader">													<!-- Верхний блок business`a -->
-					<div class="prList">
+				<div class="prList">
 					<div class="productsList">Products list</div>
 					<div class="projectsList">Projects list</div>
 				</div>
@@ -423,6 +423,13 @@
 					<div>
 						<select>
 							<option></option>
+							<option class="productOption">appliances</option>
+							<option class="productOption">clothes</option>
+							<option class="productOption">Stationery</option>
+							<option class="productOption">dishes</option>
+							<option class="projectOption">Game</option>
+							<option class="projectOption">Web-site</option>
+							<option class="projectOption">Program</option>
 						</select>
 						<input class="budgetBusiness" type="text" placeholder="budget" name="">
 					</div>
@@ -435,13 +442,16 @@
 				<div class="currentPrMenu">														<!-- Текущие проекты -->
 					<div>Current projects:</div>
 
-					<table class="curPrTable">
-						<tr>
-							<td>Name</td>
-							<td>Profit</td>
-							<td>Famous</td>
-						</tr>
-					</table>
+					<div class="curPrTableWrap">
+						<table class="curPrTable">
+							<tr>
+								<td>Name</td>
+								<td>Profit</td>
+								<td>Famous</td>
+							</tr>
+						</table>
+					</div>
+
 					<div>?</div>													<!-- Галочка тут. (заменить на IMG или ещё что) -->
 				</div>														<!-- Текущие проекты КОНЕЦ -->
 
@@ -452,6 +462,9 @@
 			<div>											<!-- Прогресс проектов -->
 				<div>Progress of pr.</div>
 				<div class="listOfProgress"></div>
+				<div class="progressBlock">
+				</div>
+
 				<div>?</div>														<!-- Галочка тут. (заменить на IMG или ещё что) -->
 			</div>											<!-- Прогресс проектов КОНЕЦ-->	
 
@@ -481,6 +494,7 @@
 	<script type="text/javascript" src="js/buy.js"></script>
 	<script type="text/javascript" src="js/underworking.js"></script>
 
+	<script type="text/javascript" src="business/prList.js"></script>
 	<script type="text/javascript" src="business/newPr.js"></script>
 	<script type="text/javascript" src="business/showMenu.js"></script>
 
