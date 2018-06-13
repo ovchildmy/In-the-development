@@ -146,20 +146,22 @@
 }
 
 .progressRow{
+	margin: 13px 0 0 50px;
+	width: 600px;
 }
 
 .progressRow, .progressRowStatus{
-	width: 600px;
 	height: 30px;
 	background: gray;
 	border-radius: 15px;
 	display: inline-block;
-    margin: 13px 0 0 50px;
 }
 
 .progressRowStatus{
 	width: 0px;
 	background: yellow;
+	max-width: 600px;
+	float: left;
 }
 
 .release{

@@ -1,1 +1,40 @@
-var list = []
+var list = [];
+
+var prData = [
+	{"name":"appliances",
+	"data":{
+		"minworkers":"150",
+		"maxneedworkers":"500",
+		"mindays":"60"
+	}},
+	{"stationery":{
+		"minworkers":"10",
+		"maxneedworkers":"50",
+		"mindays":"20"	
+	}},
+	{"crockery":{
+		"minworkers":"40",
+		"maxneedworkers":"20",
+		"mindays":"10"	
+	}},
+	{"clothes":{
+		"minworkers":"20",
+		"maxneedworkers":"300",
+		"mindays":"70"	
+	}},
+	{"Web-site":{
+		"minworkers":"7",
+		"maxneedworkers":"20",
+		"mindays":"10"	
+	}},
+	{"Program":{
+		"minworkers":"60",
+		"maxneedworkers":"500",
+		"mindays":"20"	
+	}},
+	{"Game":{
+		"minworkers":"180",
+		"maxneedworkers":"100",
+		"mindays":"400"
+	}}	
+]

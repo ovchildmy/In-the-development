@@ -31,29 +31,20 @@ $(document).on("click",".release", function(){
 
 	var prnum = $(this).data("prnum");
 	var parent = $(this).parent();
+	var readiness = $(".progressRowStatus").css("width");
+	readiness = parseInt(readiness);
+	readiness = readiness/600;
+	readiness.toFixed(1);
+	console.log(readiness);
 
+	list.push({"name":parent.children(".nameProgress").text(),"marketing":"none","readiness":readiness,"type":parent.data('type')});
 
 	$(".curPrTable").append("<tr><td title="+parent.data('type')+">"+parent.children(".nameProgress").text()+"</td><td>"+ 0 +"</td><td>"+ - +"</td></tr>")
 
 
-	list[list.length] = parent.children(".nameProgress").text()
-
 	console.log(list);
+
 	parent.remove();
 })
 
 
-$('.projectSpanBusiness').on("click", function(){
-	$('.productSpanBusiness').css({"border":"0px dashed black"});
-	$('.projectSpanBusiness').css({"border":"1px dashed black"});
-	$(".projectOption").show();
-	$(".productOption").hide();
-})
-
-
-$('.productSpanBusiness').on("click", function(){
-	$('.projectSpanBusiness').css({"border":"0px dashed black"});
-	$('.productSpanBusiness').css({"border":"1px dashed black"});
-	$(".projectOption").hide();
-	$(".productOption").show();
-})
