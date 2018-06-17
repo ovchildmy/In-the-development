@@ -1,0 +1,7 @@
+.hireAgree, .fireAgree{
+    cursor: pointer;
+    background: #0043ff;
+    width: 200px;
+    border-radius: 5px;
+    margin: 10px auto;
+}

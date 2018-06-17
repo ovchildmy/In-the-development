@@ -9,6 +9,7 @@ $(".nextDay").on("click",function(){
 	if(day==30){
 		day=1
 		month+=1;
+		solary();
 	}else{
 		day++;
 	}

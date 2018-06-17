@@ -1,9 +1,11 @@
+var typePr;
+
 $('.projectSpanBusiness').on("click", function(){
 	$('.productSpanBusiness').css({"border":"0px dashed black"});
 	$('.projectSpanBusiness').css({"border":"1px dashed black"});
 	$(".projectOption").show();
 	$(".productOption").hide();
-
+	typePr = "project";
 })
 
 
@@ -12,6 +14,7 @@ $('.productSpanBusiness').on("click", function(){
 	$('.productSpanBusiness').css({"border":"1px dashed black"});
 	$(".projectOption").hide();
 	$(".productOption").show();
+	typePr = "product";
 })
 
 $(".prMenu select").on("click",function(){

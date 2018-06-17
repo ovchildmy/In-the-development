@@ -30,6 +30,10 @@
 	float: left;
 }
 
+.businessFooter{
+	margin-top: 90px;
+}
+
 .productsList{
 	padding-bottom: 5px;
 	border-bottom: 1px solid black;
@@ -208,3 +212,4 @@
     margin-top: 15px;
     height: 54px;
 }
+

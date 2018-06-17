@@ -5,7 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/work.css">
 	<link rel="stylesheet" type="text/css" href="css/underworking.css">
+	<link rel="stylesheet" type="text/css" href="css/business/prList.css">
 	<link rel="stylesheet" type="text/css" href="css/business/mainTheme.css">
+	<link rel="stylesheet" type="text/css" href="css/business/workers.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<title>SoL</title>
 </head>
@@ -398,18 +400,18 @@
 					</div>
 					<div>
 						Hire 
-						<input type="text" placeholder="count">
-						<div>Agree</div>									<!-- Галочка тут. (заменить на IMG или ещё что) -->
+						<input class="hireCount" type="text" placeholder="count">
+						<div class="hireAgree">Agree</div>									<!-- Галочка тут. (заменить на IMG или ещё что) -->
 					</div>
 					<div>
 						Fire
-						<input type="text" placeholder="count">
-						<div>Agree</div>									<!-- Галочка тут. (заменить на IMG или ещё что) -->
+						<input class="fireCount" type="text" placeholder="count">
+						<div class="fireAgree">Agree</div>									<!-- Галочка тут. (заменить на IMG или ещё что) -->
 					</div>
 					<div>
 						Solary per month:
 						<br>
-						<span class="workersSolary"></span>$
+						<span class="workersSolary">0</span>$
 					</div>
 				</div>
 
@@ -459,7 +461,7 @@
 
 
 
-			<div>											<!-- Прогресс проектов -->
+			<div class="businessFooter">											<!-- Прогресс проектов -->
 				<div>Progress of pr.</div>
 				<div class="listOfProgress"></div>
 				<div class="progressBlock">
@@ -467,6 +469,37 @@
 
 				<div>?</div>														<!-- Галочка тут. (заменить на IMG или ещё что) -->
 			</div>											<!-- Прогресс проектов КОНЕЦ-->	
+
+
+				
+				<!-- Список продуктов -->
+
+			<div class="productListMenu">
+				<div class="productListMenu-back">back</div>
+				<table>
+					<td>Name</td>
+					<td>Variation</td>
+					<td>Type</td>
+					<td>Readiness</td>
+					<td>Copies</td>
+					<td>Marketing</td>
+				</table>
+			</div>
+
+
+				<!-- Список проектов -->
+
+			<div class="projectListMenu">
+				<div class="projectListMenu-back">back</div>
+				<table>
+					<td>Name</td>
+					<td>Variation</td>
+					<td>Type</td>
+					<td>Readiness</td>
+					<td>Copies</td>
+					<td>Marketing</td>
+				</table>
+			</div>
 
 		</div>												<!-- Бизнес Меню КОНЕЦ -->
 
@@ -495,10 +528,16 @@
 	<script type="text/javascript" src="js/buy.js"></script>
 	<script type="text/javascript" src="js/underworking.js"></script>
 
-	<script type="text/javascript" src="business/prList.js"></script>
-	<script type="text/javascript" src="business/newPr.js"></script>
-	<script type="text/javascript" src="business/showMenu.js"></script>
 	<script type="text/javascript" src="business/prSelect.js"></script>
+	<script type="text/javascript" src="business/solary.js"></script>
+	<script type="text/javascript" src="business/prData.js"></script>
+	<script type="text/javascript" src="business/prList.js"></script>
+	<script type="text/javascript" src="business/workers.js"></script>
+	<script type="text/javascript" src="business/newPr.js"></script>
+	<script type="text/javascript" src="business/release.js"></script>
+	<script type="text/javascript" src="business/topTable.js"></script>
+	<script type="text/javascript" src="business/prListBack.js"></script>
+	<script type="text/javascript" src="business/showMenu.js"></script>
 
 	<script type="text/javascript" src="core/nextDay.js"></script>
 	<script type="text/javascript" src="core/saving.js"></script>
