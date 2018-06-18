@@ -70,26 +70,26 @@ $(".buy").on("click", function(){
 				return false;
 			}else if($(".actionsCount").html() >= "0"){
 				// console.log("больше 0 действий")
-				if(parentOfBuy.attr("class") != "foodMenu divMenu"){
+				if(parentOfBuy.attr("class") != "foodMenu"){
 					$(".actionsCount").html(actionsCount - 1);
 					// console.log("Не ФудМеню")
 					for(i = 0; i < $(".buy").length; i++){		
-					if($(".productivity").eq(i).data("perform") == $(this).data("perform")){
-					var productivity = $(".productivity").eq(i).children(".productivityValue").text()
-					currentWidth += +productivity;	
-					currentWidth += "%"
-					currentStatusMenu.css({"width": currentWidth});
+						if($(".productivity").eq(i).data("perform") == $(this).data("perform")){
+							var productivity = $(".productivity").eq(i).children(".productivityValue").text()
+							currentWidth += +productivity;	
+							currentWidth += "%"
+							currentStatusMenu.css({"width": currentWidth});	
 					}
 				}
 				} else{
 					// console.log("ФудМеню")
 					for(i = 0; i < $(".buy").length; i++){		
-					if($(".productivity").eq(i).data("perform") == $(this).data("perform")){
-					var productivity = $(".productivity").eq(i).children(".productivityValue").text()
-					currentWidth += +productivity;	
-					currentWidth += "%"
-					currentStatusMenu.css({"width": currentWidth});
-					}
+						if($(".productivity").eq(i).data("perform") == $(this).data("perform")){
+							var productivity = $(".productivity").eq(i).children(".productivityValue").text()
+							currentWidth += +productivity;	
+							currentWidth += "%"
+							currentStatusMenu.css({"width": currentWidth});
+						}
 				}
 				}
 			}
@@ -98,3 +98,46 @@ $(".buy").on("click", function(){
 
 		//	console.log(typeof($(".actionsCount").text()))
 });
+
+
+/////////////////////////////////////////////////////////
+/////// Эффекты от действия
+
+$(".buy").on("click",function(){
+	healthWidth = parseInt($(".healthRowStatus").css("width"))/8;
+
+	respecthWidth = parseInt($(".resRowStatus").css("width"))/8;
+
+	energyWidth = parseInt($(".energyRowStatus").css("width"))/8
+
+
+	if($(".actionsCount").html() > "0"){
+		console.log($(this).parent().children(".effect").data("health"))
+		for(i = 0; i < $(".buy").length; i++){
+				if($(".effect").eq(i).data("perform") == $(this).data("perform")){
+					if($(".effect").eq(i).data("health")!=undefined){
+						var dataH = Number($(".effect").eq(i).data("health"));
+						var newWidthHealth = healthWidth + dataH;
+						newWidthHealth += "%"; 
+						$(".healthRowStatus").css("width", newWidthHealth);
+						
+					}
+
+					if($(".effect").eq(i).data("respect")!=undefined){
+						var dataH = Number($(".effect").eq(i).data("respect"));
+						var newWidthHealth = respecthWidth + dataH;
+						newWidthHealth += "%"; 
+						$(".resRowStatus").css("width", newWidthHealth);
+					}
+
+					if($(".effect").eq(i).data("energy")!=undefined){
+						console.log($(".effect").eq(i).data("energy"))
+						var dataH = Number($(".effect").eq(i).data("energy"));
+						var newWidthHealth = energyWidth + dataH;
+						newWidthHealth += "%"; 
+						$(".energyRowStatus").css("width", newWidthHealth);
+					}
+				}
+		}
+	}
+})

@@ -126,21 +126,21 @@
 						<td class=""><span class="water">Water</span></td>
 						<td class="price" data-perform="water">1$</td>
 						<td class="productivity" data-perform="water">+<span class="productivityValue">2</span></td>
-						<td class="">-</td>
+						<td class="effect" data-perform="water">-</td>
 						<td class="buy" data-perform="water">Buy</td>
 					</tr>
 					<tr>
 						<td class=""><span class="chocolate">Chocolate</span></td>
 						<td class="price" data-perform="chocolate">2$</td>
 						<td class="productivity" data-perform="chocolate">+<span class="productivityValue">5</span></td>
-						<td class="">-</td>
+						<td class="effect" data-perform="chocolate">-</td>
 						<td class="buy" data-perform="chocolate">Buy</td>
 					</tr>
 					<tr>
 						<td class=""><span class="burger">Burger</span></td>
 						<td class="price" data-perform="burger">3$</td>
 						<td class="productivity" data-perform="burger">+<span class="productivityValue">7</span></td>
-						<td class=""><span>health</span> - 10</td>
+						<td class="effect" data-perform="burger" data-health="-10"><span>health</span> - 10</td>
 						<td class="buy" data-perform="burger">Buy</td>
 					</tr>
 				</table>				
@@ -159,21 +159,21 @@
 						<td class="">Tea</td>
 						<td class="price" data-perform="Tea">7$</td>
 						<td class="productivity" data-perform="Tea">+<span class="productivityValue">2</span></td>
-						<td class="" >health + 2<br>respect + 2</td>
+						<td class="effect" data-perform="Tea" data-health="+2">health + 2</td>
 						<td class="buy" data-perform="Tea">Buy</td>
 					</tr>
 					<tr>
 						<td class="">Pizza</td>
 						<td class="price" data-perform="Pizza">9$</td>
 						<td class="productivity" data-perform="Pizza">+<span class="productivityValue">13</span></td>
-						<td class="">-</td>
+						<td class="effect" data-perform="Pizza">-</td>
 						<td class="buy" data-perform="Pizza">Buy</td>
 					</tr>
 					<tr>
 						<td class="">Soup</td>
 						<td class="price" data-perform="Soup">7$</td>
 						<td class="productivity" data-perform="Soup">+<span class="productivityValue">17</span></td>
-						<td class="">energy - 25</td>
+						<td class="effect" data-perform="Soup" data-energy="-25">energy - 25</td>
 						<td class="buy" data-perform="Soup">Buy</td>
 					</tr>
 				</table>
@@ -192,21 +192,21 @@
 						<td class="">Lobster</td>
 						<td class="price" data-perform="Lobster">18$</td>
 						<td class="productivity" data-perform="Lobster">+<span class="productivityValue">12</span></td>
-						<td class="">respect + 3</td>
+						<td class="effect" data-energy="+3" data-perform="Lobster">energy + 3</td>
 						<td class="buy" data-perform="Lobster">Buy</td>
 					</tr>
 					<tr>
 						<td class="">Roe</td>
 						<td class="price" data-perform="Roe">30$</td>
 						<td class="productivity" data-perform="Roe">+<span class="productivityValue">2</span></td>
-						<td class="">health + 2<br>respect + 2</td>
+						<td class="effect" data-perform="Roe" data-health="+2">health + 2</td>
 						<td class="buy" data-perform="Roe">Buy</td>
 					</tr>
 					<tr>
 						<td class="">Doshirak</td>
 						<td class="price" data-perform="Doshirak">1$</td>
 						<td class="productivity" data-perform="Doshirak">+<span class="productivityValue">99</span></td>
-						<td class="">health - 99</td>
+						<td class="effect" data-perform="Doshirak" data-health="-99">health - 99</td>
 						<td class="buy" data-perform="Doshirak">Buy</td>
 					</tr>
 				</table>
@@ -229,21 +229,21 @@
 						<td class="">Bench</td>
 						<td class="productivity" data-perform="Bench">+<span class="productivityValue">15</span></td>
 						<td class="price" data-perform="Bench">0$</td>
-						<td class="">health - 7 <br>respect - 8</td>
+						<td class="effect" data-perform="Bench" data-health="-7" data-respect="-8">health - 7 <br>respect - 8</td>
 						<td class="buy" data-perform="Bench">Perform</td>
 					</tr>
 					<tr class="energy-table__tr">
 						<td class="">Hostel</td>
 						<td class="productivity" data-perform="Hostel">+<span class="productivityValue">30</span></td>
 						<td class="price" data-perform="Hostel">5$</td>
-						<td class="">respect - 2</td>
+						<td class="effect" data-perform="Hostel" data-respect="-2">respect - 2</td>
 						<td class="buy" data-perform="Hostel">Perform</td>
 					</tr>
 					<tr class="energy-table__tr">
 						<td class="">Hotel</td>
 						<td class="productivity" data-perform="Hotel">+<span class="productivityValue">70</span></td>
 						<td class="price" data-perform="Hotel">50$</td>
-						<td class="">-</td>
+						<td class="effect" data-perform="Hotel">-</td>
 						<td class="buy" data-perform="Hotel">Perform</td>
 					</tr>
 				</table>
@@ -265,21 +265,21 @@
 						<td class="">Herbalist</td>
 						<td class="price" data-perform="Herbalist">5$</td>
 						<td class="productivity" data-perform="Herbalist">+<span class="productivityValue">5</span></td>
-						<td class="">respect - 20</td>
+						<td class="effect" data-perform="Herbalist" data-respect="-8">respect - 8</td>
 						<td class="healthPerform buy" data-perform="Herbalist">Купить</td>
 					</tr>
 					<tr>
 						<td class="">Pharmacy</td>
 						<td class="price" data-perform="Pharmacy">11$</td>
 						<td class="productivity" data-perform="Pharmacy">+<span class="productivityValue">15</span></td>
-						<td class="">-</td>
+						<td class="effect" data-perform="Pharmacy">-</td>
 						<td class="buy" data-perform="Pharmacy">Купить</td>
 					</tr>
 					<tr>
 						<td class="">Hospital</td>
 						<td class="price" data-perform="Hospital">100$</td>
 						<td class="productivity" data-perform="Hospital">+<span class="productivityValue">90</span></td>
-						<td class="">-</td>
+						<td class="effect">-</td>
 						<td class="buy" data-perform="Hospital">Купить</td>
 					</tr>
 				</table>
