@@ -1,3 +1,5 @@
+var countPr = 0;
+
 $(document).on("click",".release", function(){
 
 	var prnum = $(this).data("prnum");
@@ -20,5 +22,6 @@ $(document).on("click",".release", function(){
 		$(".projectListMenu table").append("<tr><td>"+list[list.length-1].name+"</td><td>"+list[list.length-1].variant+"</td><td>"+list[list.length-1].type+"</td><td>"+list[list.length-1].readiness+"</td><td>"+list[list.length-1].copies+"</td><td>"+list[list.length-1].marketing+"</td></tr>");		
 	}
 
+	countPr += 1;
 	parent.remove();
 })
