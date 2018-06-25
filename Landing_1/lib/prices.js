@@ -14,9 +14,9 @@ $(".pricesNav div").on("click",function(){
 	$(".pricesNav div").each(function(index){
 		// console.log($(".pricesNav div").eq(index))
 
-			console.log(this)
-			console.log($(".pricesNav div")[index])
+			// console.log(this)
 		if($(".pricesNav div")[index]==$(this)){
+			console.log($(".pricesNav div")[index])
 		}
 	})
 
