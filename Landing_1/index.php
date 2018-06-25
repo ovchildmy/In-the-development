@@ -80,7 +80,228 @@
 
 	<div class="pricesBackground">
 		<div class="prices">
-			<div class="pricesNav"><span>service 1</span><span>service 2</span><span>service 3</span></div>
+			<div class="pricesNav"><div>service 1</div><div>service 2</div><div>service 3</div><div>service 4</div><div>service 5</div></div>
+
+			<div class="serviceWrap">
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">2$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">122$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">121$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">124$</div>
+				</div>
+			</div>
+
+			<div class="serviceWrap">
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">2$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">122$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">121$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">124$</div>
+				</div>
+			</div>
+
+			<div class="serviceWrap">
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">2$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">122$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">121$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">124$</div>
+				</div>
+			</div>
+
+			<div class="serviceWrap">
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">2$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">122$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">121$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">124$</div>
+				</div>
+			</div>
+
+			<div class="serviceWrap">
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">12$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">2$</div>
+				</div>
+				
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">122$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">121$</div>
+				</div>
+
+				<div class="service">
+					<div class="service_item"><span>Lorem ipsum dolor sit amet</span></div>
+					<div class="service_item-price">124$</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -107,5 +328,6 @@
 	<!-- <script src="jquery.min.js"></script> -->
 	<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="lib/core.js"></script>
+	<script type="text/javascript" src="lib/prices.js"></script>
 </body>
 </html>

@@ -6,7 +6,46 @@
 
 .prices{
 	width: 900px;
-	height: 600px;
-	background: white;
-	margin: 50px auto 0;
+	margin: 50px auto 0;    
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+}
+
+.pricesNav{
+	border-bottom: 1px solid #76433e;
+}
+
+.pricesNav div{
+	display: inline-block;
+	font-size: 30px;
+	color: white;    
+	text-transform: uppercase;
+	width: 20%;
+	cursor: pointer;
+	text-align: center;
+}
+
+.pricesNav div:hover{
+	color: #c6c6c6;
+}
+
+.currentPrice{
+	background: #76433e;
+}
+
+.service_item span{
+	border-bottom: 1px dotted gray; 
+}
+
+.service{
+	text-align: center;
+	border-radius: 15px;
+	font-size: 30px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+	display: inline-block;
+	width: 49%;
+	margin-bottom: 30px;
+}
+
+.serviceWrap{
+	margin-top: 10px;
 }
