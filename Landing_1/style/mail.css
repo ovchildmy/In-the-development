@@ -8,6 +8,7 @@
 	/*background: gray;*/
 	text-align: center;
 	margin: 0 auto;
+    box-shadow: 0px 10px 20px 0px black;
 	padding: 10px 0 10px;
 }
 
@@ -15,6 +16,8 @@
 	display: block;
 	width: 90%;
 	height: 50px;
+	border: 0px solid;
+	border-bottom: 1px solid gray;
 	font-size: 30px;
 	margin: 10px auto;
 }
@@ -23,6 +26,8 @@
 	width: 90%;
 	font-size: 30px;
 	height: 100px;
+	border: 0px solid;
+	border-bottom: 1px solid gray;
 	margin: 10px auto;
 	resize: none;
 }
