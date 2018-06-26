@@ -1,4 +1,5 @@
-html{
+.topWrap{
+	width: 100%;
     background-size: cover;
 	background-image: url(https://thepoint.rabota.ua/wp-content/uploads/2016/12/shutterstock_458728414-768x512.jpg);
 }

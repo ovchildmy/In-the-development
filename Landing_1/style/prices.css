@@ -1,12 +1,14 @@
 .pricesBackground{
-	width: 100%;
-	/*height: 123px;*/
-	background-image: url(http://finiq.ru/uploads/shutterstock-193941254_1280x1280.jpg);
+	background-image: url(http://www.agdenetim.com/mp-include/uploads/2015/03/1425307540_banner1.jpg);
+    background-size: cover;
+    padding: 50px 0 100px;
+    background-repeat: no-repeat;
 }
 
 .prices{
 	width: 900px;
-	margin: 50px auto 0;    
+	margin: 50px auto 0;   
+	border-radius: 0 0 5px 5px; 
 	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
 }
 
@@ -40,12 +42,16 @@
 	text-align: center;
 	border-radius: 15px;
 	font-size: 30px;
+	flex:  0 0 48%;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-	display: inline-block;
-	width: 49%;
+	width: 40%;
 	margin-bottom: 30px;
 }
 
 .serviceWrap{
 	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	width: inherit;
+	justify-content: space-around;
 }

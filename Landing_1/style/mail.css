@@ -1,0 +1,28 @@
+.mailWrap{
+	width: 100%;
+	padding-top: 100px;
+}
+
+.mail{
+	width: 900px;
+	/*background: gray;*/
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 0 10px;
+}
+
+.mail input{
+	display: block;
+	width: 90%;
+	height: 50px;
+	font-size: 30px;
+	margin: 10px auto;
+}
+
+.mail textarea{
+	width: 90%;
+	font-size: 30px;
+	height: 100px;
+	margin: 10px auto;
+	resize: none;
+}
