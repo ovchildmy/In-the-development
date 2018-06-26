@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-	<title></title>
+	<title>Landing_1</title>
 </head>
 <body>
 	<div class="topWrap">
