@@ -1,0 +1,55 @@
+.mainMenu{
+	display: flex;
+	height: 100%;
+	/*background: pink;*/
+	font-size: 35px;
+	align-items: stretch;
+}
+
+.mainMenu-left{
+	/*background: red;*/
+	font-size: 45px;
+	flex: 0 0 50%;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.mainMenu-right{
+	flex: 0 0 50%;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	/*background: green;*/
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.mainMenu-right_top{
+	text-align: center;
+	flex: 0 0 100%;
+	padding-bottom: 50px;
+	border-bottom: 1px solid black;
+}	
+
+.mainMenu-right_top input, .mainMenu-right_bottom input{
+	width: 80%;
+	height: 50px;
+	font-size: 35px;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.mainMenu-right_top input:last-child, .mainMenu-right_bottom input:last-child{
+	cursor: pointer;
+}
+
+.mainMenu-right_bottom{
+	flex: 0 0 100%;
+	margin-top: 50px;
+}
+
+/*надо убрать display:flex у главного, поскольку не робит высота, так что надо перенести на обычные стили*/

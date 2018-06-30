@@ -16,3 +16,9 @@ $(".photoItem").on("mouseover", function(){
 $(".photoItem").on("mouseout", function(){
 	$(".hoverPhoto").hide();
 })
+
+$("#addPhotoInput").change(function(){
+	var addPhotoInput = $("#addPhotoInput").text()
+	
+	if($(this).val()!="") alert(addPhotoInput); else alert("none") 
+})

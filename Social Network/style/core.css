@@ -23,6 +23,19 @@
 	height: 30px;
 	border-radius: 30px;
 	cursor: pointer;
-	background: black;
+	/*background: black;*/
 }
 
+.header-icon:hover{
+	color: #585858;
+	cursor: pointer;
+}
+
+.other{
+	position: absolute;
+	width: 150px;
+	right: 5%;
+	top: 8%;
+	height: 80px;
+	background: gray;
+}

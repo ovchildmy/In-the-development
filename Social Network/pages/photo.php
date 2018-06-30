@@ -2,10 +2,14 @@
 	+
 </div>
 
-<form>
-	<input type="file" name="">
-	<input type="submit" name="">
-</form>
+
+<div class="addPhotoPopup">
+	<form class="addPhotoPopup-form">
+		<input type="file" id="addPhotoInput" name="">
+		<label for="addPhotoInput"></label>
+		<input type="submit" name="">
+	</form>
+</div>
 
 <div class="photoWrap">	
 
