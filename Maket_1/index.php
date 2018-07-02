@@ -4,13 +4,24 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style/uikit-rtl.css">
 	<link rel="stylesheet" type="text/css" href="style/uikit.css">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="style/core.css">
+	<link rel="stylesheet" type="text/css" href="style/header.css">
+	<link rel="stylesheet" type="text/css" href="style/navigation.css">
+	<link rel="stylesheet" type="text/css" href="style/content.css">
+	<link rel="stylesheet" type="text/css" href="style/shortNews.css">
+	<link rel="stylesheet" type="text/css" href="style/events.css">
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<title>Maket_1</title>
 	<meta charset="utf-8">
 </head>
 <body>
 
+<div class="bodyBg-left"></div>
+<div class="news-left"></div>
+
 <div class="container">
+	<div class="bodyBg-right"></div>
+
 
 	<div class="header">
 		<div class="headerImage">
@@ -30,13 +41,118 @@
 		</div>
 	</div>
 
+	<div class="navigation">
+		<div>Наша компания</div>
+		<div>Наша команда</div>
+		<div>Моя <div>безопасность</div></div>
+		<div>Управляющая компания</div>
+		<div>Наши предприятия</div>
+		<div>Справочники</div>
+		<div>Сервисы</div>
+	</div>
 
-<i class="uk-icon-cog"></i>
 
+	<div class="content">
+		<div class="news-container">
+			<div class="news-top">
+				<div class="news-top_photo"></div>
+				<div class="news-top_text">
+					<div>Евраз Тв</div>
+					<div>65-летие Рельсобалочного цеха ЕВРАЗ <span>НТМК</span></div>
+				</div>
+			</div>
+			<div class="news-bottom">
+				<div class="news-right"></div>
+				<div class="news-bottom_headline">Иванов <span>Алексей</span></div>
+				<div class="news-bottom_content">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на запросы клиентов, поставляющей продукцию высокого качества...</div>
+				<div class="news-bottom_footer">Старший Вице-президент, <br>Блок коммерции и развития бизнеса</div>
+			</div>
+		</div>
 
+		<div class="arrows">
+			<div class="arrowLeft"><</div>
+			<div class="arrowRight">></div>
+		</div>
 
+		<div class="shortNews">
+			<div class="shortNews-user">
+				<div class="shortNews-user_photo"></div>
+				<div>
+					<div class="shortNews-user_name">Царенко Владимир</div>
+					<div class="shortNews-user_position">Главный специалист ЕвразХолдинг</div>
+				</div>
+			</div>
+			<div class="shortNews-warning">
+				<div class="shortNews-warning_photo"></div>
+				<div class="shortNews-warning_date">12 декабря</div>
+				<div class="shortNews-warning_message">Встреча с представителями банка ВТБ24</div>
+			</div>
+			<div class="shortNews-event">
+				<div class="shortNews-event_photo"></div>
+				<div class="shortNews-event_date">13 января</div>
+				<div class="shortNews-event_message">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</div>
+			</div>
+			<div class="shortNews-nav">
+				<div class="shortNews-nav_point"></div>
+				<div class="shortNews-nav_point"></div>
+				<div class="shortNews-nav_point"></div>
+				<div class="shortNews-nav_point"></div>
+				<div class="shortNews-nav_point"></div>
+			</div>
+		</div>
 
+		<div class="events">
+			<div class="lastEvents">
+				<div class="event">
+					<div class="event-photo">
+						<div class="event-marker"><span class="event-marker__south">Юг</span></div>
+					</div>
+					<div class="event-name">ЕВРАЗ передал здание шахты &#171;МУК-96&#187; Междуреченску</div>
+					<div class="event-date">Сегодня</div>
+				</div>
+				<div class="event">
+					<div class="event-photo">
+						<div class="event-marker"><span class="event-marker__south">Юг</span></div>
+					</div>
+					<div class="event-name">На теплоэлектроцентрали <br> ЕВРАЗ Южкокса внедрили систему LOTO</div>
+					<div class="event-date"></div>
+				</div>
+				<div class="event">
+					<div class="event-photo">
+						<div class="event-marker event-marker_red">Зсмк</div>
+					</div>
+					<div class="event-name">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</div>
+					<div class="event-date">Вчера</div>
+				</div>
+				<div class="event">
+					<div class="event-photo">
+						<div class="event-marker">Нтмк</div>
+					</div>
+					<div class="event-name">ЕВРАЗ НТМК повышает эффективность выплавки <br>стали</div>
+					<div class="event-date">19 декабря</div>
+				</div>
+			</div>
 
+			<div class="events-other">
+				<div class="enents-news">
+					<div></div>
+					<div>Все новости</div>
+				</div>
+				<div class="events-region">
+					<div></div>
+					<div>Мой регион</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-firm"></div>
+			<div class="footer-contacts"></div>
+			<div class="footer-market"></div>
+			<div class="footer-other"></div>
+		</div>
+
+	</div>
 
 
 

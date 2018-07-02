@@ -1,0 +1,46 @@
+.bodyBg-left{
+	position: absolute;
+    display: inline-block;
+    top: 0;
+    width: 40%;
+    height: 670px;
+    background: #f6f6f6;
+}
+
+.bodyBg-right{
+	position: absolute;
+    right: 42%;
+	top: 0;
+	left: 0;
+	width: 817px;
+	height: 670px;
+	background: #f6f6f6;
+    z-index: -1;
+}
+
+.container{
+	width: 1251px;
+	height: 1000px;
+	/*background: #cfcfcf;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+.news-right{
+    width: 318px;
+    height: 230px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.news-left{
+	position: absolute;
+	top: 300px;
+    height: 230px;
+	width: 28%;
+	background: white;
+	z-index: 1;
+}

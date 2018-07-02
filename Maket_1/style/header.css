@@ -1,17 +1,10 @@
-.container{
-	width: 1251px;
-	height: 1000px;
-	background: #cfcfcf;
-	margin: 0 auto;
-}
-
 .header{
 	width: 100%;
     height: 97px;
 	flex-wrap: wrap;
 	display: flex;
 	justify-content: space-between;
-	background: white;
+	/*background: white;*/
 	align-items: center;
     color: black;
 }
