@@ -43,6 +43,7 @@
 	font-size: 14px;
     margin: 22px 0 0 8px;
     line-height: 18px;
+    color: black;
 }
 
 .event-name:last-child{
@@ -52,6 +53,7 @@
 .event-date{
     margin: 10px 0 0 12px;
     font-size: 13px;
+    color: gray;
 }
 
 .event-marker__south{
@@ -81,6 +83,7 @@
     align-items: center;
     border-radius: 20px;
     background: #fddb9e;
+    cursor: pointer;
 }
 
 .enents-news > div:first-child{

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="style/content.css">
 	<link rel="stylesheet" type="text/css" href="style/shortNews.css">
 	<link rel="stylesheet" type="text/css" href="style/events.css">
+	<link rel="stylesheet" type="text/css" href="style/footer.css">
 	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<title>Maket_1</title>
 	<meta charset="utf-8">
@@ -146,10 +147,72 @@
 		</div>
 
 		<div class="footer">
-			<div class="footer-firm"></div>
-			<div class="footer-contacts"></div>
-			<div class="footer-market"></div>
-			<div class="footer-other"></div>
+			<div class="footer-firm">
+				<img src="img/mainImg.jpg">
+				<div>Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</div>
+			</div>
+			<div class="footer-contacts">
+				<div class="footer-contacts_headline">Горячая линия</div>
+				<div class="call">
+					<div class="call-number">8-800-555-88-88</div>
+					<div class="call-name">для сотрудников российских предприятий</div>
+				</div>
+				<div class="call">
+					<div class="call-number">0-888-502-118</div>
+					<div class="call-name">для сотрудников украинских предприятий</div>
+				</div>
+				<div class="call">
+					<div class="call-number">8-800-080-43-58</div>
+					<div class="call-name">для сотрудников ЕВРАЗ Каспиан Сталь</div>
+				</div>
+				<div class="call-mail">vopros@evraz.com</div>
+				<div class="hotLine">Написать в горячую линию</div>
+			</div>
+			<div class="footer-market">
+				<div class="footer-market_headline">
+					<div>Биржевые котировки</div>
+					<div class="footer-market_date">28 декабря 12:35 (GMT)</div>
+				</div>
+
+				<div class="footer-market_prices">
+					<div class="footer-market_prices--left">
+						<div class="footer-price_name">EVRAZ (LSE)</div>
+						<div class="footer-price_price"><span>225. 10</span> GBX</div>
+						<div class="footer-price_pos">1.20 (0.54 %)	&#160; <span class="triangle">&#9650;</span></div>
+					</div>
+					<div class="footer-market_prices--right">
+						<div>Открытие <span>221, 00</span></div>
+						<div>Максимум <span>238, 80</span></div>
+						<div>Минимум <span>221, 00</span></div>
+					</div>
+				</div>
+
+				<div class="footer-market_prices">
+					<div class="footer-market_prices--left">
+						<div class="footer-price_name">Raspadskaya (MCX)</div>
+						<div class="footer-price_price"><span>78. 96</span> RUB</div>
+						<div class="footer-price_pos">0.65 (0.83 %)	&#160; <span class="triangle">&#9650;</span></div>
+					</div>
+					<div class="footer-market_prices--right">
+						<div>Открытие <span>221, 00</span></div>
+						<div>Максимум <span>238, 80</span></div>
+						<div>Минимум <span>221, 00</span></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-other">
+				<div class="footer-other_headerline">Портал</div>
+				<div class="footer-other_link">Обратная связь</div>
+				<div class="footer-other_link">Карта разделов портала</div>
+				<div class="footer-other_link">Заявка в Service Desk</div>
+				<div class="footer-other_link">Помощь</div>
+				<div class="footer-other_link">Команда</div>
+
+				<div class="footer-other_message">
+					Если вы нашли ошибку, выделите её курсором, нажмите одновременно клавиши &#171;CTRL&#187; и &#171;ENTER&#187; и мы скорректируем неточность.
+				</div>
+			</div>
 		</div>
 
 	</div>

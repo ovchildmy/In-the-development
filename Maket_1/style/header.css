@@ -23,6 +23,7 @@
 .headerImage img{
     margin-top: 3px;
     width: 73px;
+    cursor: pointer;
 }
 
 .headerNav{
@@ -104,6 +105,10 @@
 	/*background: red;*/
 }
 
+.headerUser i{
+    cursor: pointer;
+}
+
 .headerUser > span{
 	margin: 3px 0 0 21px;
     font-size: 22px;
@@ -115,6 +120,7 @@
     background: #ffd99e;
     margin: 4px 0 0 47px;
     border-radius: 22px;
+    cursor: pointer;
 }
 
 .userMenu span:first-child{

@@ -100,6 +100,10 @@
     margin: 41px 0 0 69px;
 }
 
+.shortNews-nav_point{
+    cursor: pointer;
+}
+
 .shortNews-nav div{
 	width: 12px;
 	height: 12px;
