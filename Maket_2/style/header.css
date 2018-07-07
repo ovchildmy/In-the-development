@@ -5,10 +5,10 @@
 }
 
 .header{
-	height: 733px;    
-	padding-top: 29px;
-	color: white;
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    padding-top: 29px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+	height: 704px;    
 }
 
 
@@ -24,13 +24,13 @@
     margin: 13px 5px 0 0;
 }
 
-.container > div:last-child{
+.header > div > div:last-child{
 	/*margin-top: 172px;*/
     text-align: center;
     text-transform: uppercase;
 }
 
-.container > div:last-child > div:first-child{
+.header > div > div:last-child > div:first-child{
 	font-size: 69px;
     vertical-align: top;
     margin: 175px auto 0;
@@ -39,11 +39,11 @@
     box-sizing: border-box;
 }
 
-.container > div:last-child span{
+.header > div > div:last-child span{
 	font-weight: bold;
 }
 
-.container > div:last-child > div:nth-child(2){
+.header > div > div:last-child > div:nth-child(2){
 	height: 20px;
     width: 161px;
     border-bottom: 2px solid #ff5a29;
@@ -58,7 +58,7 @@
     text-transform: none;
 }
 
-.container > div:last-child > div:last-child{
+.header > div > div:last-child > div:last-child{
     margin-top: 68px;
     font-size: 44px;
 }

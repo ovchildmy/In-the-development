@@ -1,0 +1,69 @@
+.aboutDesign{
+	background: #292929;
+	height: 896px;
+	padding-top: 207px;
+}
+
+.aboutDesign > div > div:first-child{
+    right: -200px;
+    top: -190px;
+    position: absolute;
+    height: 1086px;
+    width: 950px;
+    background-image: url("../img/aboutDesign.png");
+    background-size: cover;
+}
+
+.aboutDesign-header{
+    text-transform: uppercase;
+    font-size: 48px;
+    width: 764px;
+    line-height: 52px;
+    color: white;
+}
+
+.aboutDesign-middle{
+	margin-top: 35px;
+    font-size: 21px;
+    width: 684px;
+    line-height: 34px;
+}
+
+.aboutDesign-line{
+	width: 160px;
+    height: 1px;
+    border-bottom: 2px solid orange;
+    margin-top: 37px;
+}
+
+.aboutDesign-comment{
+	width: 741px;
+    margin-top: 38px;
+    font-size: 17px;
+    line-height: 33px;
+}
+
+.aboutDesign-button{
+    margin-top: 51px;
+    width: 297px;
+    border-radius: 2px;
+    height: 75px;
+    color: white;
+    line-height: 72px;
+    background: #393939;
+    cursor: pointer;
+    position: relative;
+}
+
+.aboutDesign-button > i{
+	position: absolute;
+    top: 31px;
+    left: 49px;
+}
+
+.aboutDesign-button > span{
+    font-weight: normal;
+    margin-left: 90px;
+    font-size: 17px;
+    text-transform: uppercase;
+}

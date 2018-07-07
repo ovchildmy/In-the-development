@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style/uikit.css">
 	<link rel="stylesheet" type="text/css" href="style/core.css">
 	<link rel="stylesheet" type="text/css" href="style/header.css">
+	<link rel="stylesheet" type="text/css" href="style/aboutDesign.css">
 	<title></title>
 </head>
 <body>
@@ -32,9 +33,68 @@
 		</div>
 	</div>
 
+	<div class="aboutDesign">
+		<div class="container">
+			<div></div>
+			<div class="aboutDesign-header">Intuitive design is how we give the user new superpowers</div>
+			<div class="aboutDesign-middle">Case read they it of cold that speaking trifling an to unpacked moderate debating hero performed</div>
+			<div class="aboutDesign-line"></div>
+			<div class="aboutDesign-comment">Resources exquisite set arranging moonlight him household had. Month had too ham cousin remove far spirit. She  procuring the why performed continual improving. Civil songs so large shade in cause. Lady an me here must neat sold children gtratest blanch stay.</div>
+			<div class="aboutDesign-button"><i class="fa fa-play" aria-hidden="true"></i> <span>see how we work</span></div>
+		</div>
+	</div>
 
-
-
+	<div class="specialty">
+		<div>
+			<div class="speciality-headline">Our specialty</div>
+			<div class="specialty-middle"></div>
+			<div class="specialty-comment"></div>	
+		</div>
+		<div class="specialty-menu">
+			<div>
+			
+				<div class="specialty-menu_comment"></div>
+				<div class="specialty-menu_zoom">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>	
+			</div>
+			<div>
+				<i class="fa fa-paint-brush" aria-hidden="true"></i>
+				<div class="specialty-menu_comment">ui/ux</div>
+				<div class="specialty-menu_zoom">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>	
+			</div>
+			<div>
+			
+				<div class="specialty-menu_comment"></div>
+				<div class="specialty-menu_zoom">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>	
+			</div>
+			<div>
+			
+				<div class="specialty-menu_comment"></div>
+				<div class="specialty-menu_zoom">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>		
+			</div>
+			<div>
+			
+				<div class="specialty-menu_comment"></div>
+				<div class="specialty-menu_zoom">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>	
+			</div>
+			<div>
+				<i class="fa fa-camera" aria-hidden="true"></i>	
+				<div class="specialty-menu_comment"></div>
+				<div class="specialty-menu_zoom">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>	
+			</div>
+		</div>
+	</div>
 
 
 

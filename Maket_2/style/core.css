@@ -4,5 +4,8 @@
 
 .container{
 	width: 1290px;
+	height: inherit;
 	margin: 0 auto;
+	position: relative;
+	/*overflow: hidden;*/
 }
