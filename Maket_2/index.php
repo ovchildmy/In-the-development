@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style/core.css">
 	<link rel="stylesheet" type="text/css" href="style/header.css">
 	<link rel="stylesheet" type="text/css" href="style/aboutDesign.css">
+	<link rel="stylesheet" type="text/css" href="style/specialty.css">
 	<title></title>
 </head>
 <body>
@@ -45,53 +46,72 @@
 	</div>
 
 	<div class="specialty">
-		<div>
-			<div class="speciality-headline">Our specialty</div>
-			<div class="specialty-middle"></div>
-			<div class="specialty-comment"></div>	
-		</div>
-		<div class="specialty-menu">
+		<div class="container">
 			<div>
-			
-				<div class="specialty-menu_comment"></div>
-				<div class="specialty-menu_zoom">
-					<i class="fa fa-expand" aria-hidden="true"></i>
+				<div class="speciality-headline">Our specialty</div>
+				<div class="specialty-middle">Case read they most it of cold that. Speaking trifling an to unpacked moderate debating</div>
+				<div class="specialty-comment">
+					It prepare is ye nothing blushes up brought or as gravity pasture limited evening on wicket aroynd beauty say she frankness resembled.
+					<div>
+						Noiser ferars yet shyness weather ten colonet. Too him himself engaged hasband pursuit musical. Man age but him determine consisted therefore beyond reget wished.
+					</div>
 				</div>	
 			</div>
-			<div>
-				<i class="fa fa-paint-brush" aria-hidden="true"></i>
-				<div class="specialty-menu_comment">ui/ux</div>
-				<div class="specialty-menu_zoom">
-					<i class="fa fa-expand" aria-hidden="true"></i>
-				</div>	
-			</div>
-			<div>
-			
-				<div class="specialty-menu_comment"></div>
-				<div class="specialty-menu_zoom">
-					<i class="fa fa-expand" aria-hidden="true"></i>
-				</div>	
-			</div>
-			<div>
-			
-				<div class="specialty-menu_comment"></div>
-				<div class="specialty-menu_zoom">
-					<i class="fa fa-expand" aria-hidden="true"></i>
-				</div>		
-			</div>
-			<div>
-			
-				<div class="specialty-menu_comment"></div>
-				<div class="specialty-menu_zoom">
-					<i class="fa fa-expand" aria-hidden="true"></i>
-				</div>	
-			</div>
-			<div>
-				<i class="fa fa-camera" aria-hidden="true"></i>	
-				<div class="specialty-menu_comment"></div>
-				<div class="specialty-menu_zoom">
-					<i class="fa fa-expand" aria-hidden="true"></i>
-				</div>	
+			<div class="specialty-menu">
+				<div>
+					<i class="fa fa-wrench" aria-hidden="true"></i>
+					<div class="specialty-menu_name">development</div>
+					<div class="specialty-menu_comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="specialty-menu_zoom">
+						<i class="fa fa-expand" aria-hidden="true"></i>
+					</div>	
+				</div>
+				<div>
+					<i class="fa fa-paint-brush" aria-hidden="true"></i>
+					<div class="specialty-menu_name">ui/ux</div>
+					<div class="specialty-menu_comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="specialty-menu_zoom">
+						<i class="fa fa-expand" aria-hidden="true"></i>
+					</div>	
+				</div>
+				<div>
+					<i class="fa fa-bullhorn" aria-hidden="true"></i>
+					<div class="specialty-menu_name">Social marketing</div>
+					<div class="specialty-menu_comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="specialty-menu_zoom">
+						<i class="fa fa-expand" aria-hidden="true"></i>
+					</div>	
+				</div>
+				<div>
+					<i class="fa fa-arrows-h" aria-hidden="true"></i>
+					<div class="specialty-menu_name">System architecture</div>
+					<div class="specialty-menu_comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="specialty-menu_zoom">
+						<i class="fa fa-expand" aria-hidden="true"></i>
+					</div>		
+				</div>
+				<div>
+					<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+					<div class="specialty-menu_name">Copywriting</div>
+					<div class="specialty-menu_comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="specialty-menu_zoom">
+						<i class="fa fa-expand" aria-hidden="true"></i>
+					</div>	
+				</div>
+				<div>
+					<i class="fa fa-camera" aria-hidden="true"></i>	
+					<div class="specialty-menu_name">Photography</div>
+					<div class="specialty-menu_comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="specialty-menu_zoom">
+						<i class="fa fa-expand" aria-hidden="true"></i>
+					</div>	
+				</div>
 			</div>
 		</div>
 	</div>
@@ -111,5 +131,6 @@
 	<script type="text/javascript" src="lib/uikit.js"></script>
 	<script type="text/javascript" src="lib/uikit-icons	.js"></script>
 	<script type="text/javascript" src="lib/core.js"></script>
+	<script type="text/javascript" src="lib/specialty.js"></script>
 </body>
 </html>
