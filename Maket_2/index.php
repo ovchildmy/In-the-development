@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="style/header.css">
 	<link rel="stylesheet" type="text/css" href="style/aboutDesign.css">
 	<link rel="stylesheet" type="text/css" href="style/specialty.css">
+	<link rel="stylesheet" type="text/css" href="style/team.css">
 	<title></title>
 </head>
 <body>
@@ -116,7 +117,66 @@
 		</div>
 	</div>
 
+	<div class="team">
+		<div class="container">
+			<div class="team-header">Meet our team</div>
+			
+			<div class="team-middle">
+				Case read they it of cold that speaking trifling an to unpacked moderate debating learning. An particular contrasted be excellence favourable on. Nay preference dispatched difficulty continuing joy one.
+			</div>
 
+			<div class="team-imgWrap">
+				<div class="team-person">
+					<img src="img/team-1.jpg">
+					<div class="team-currentPerson">
+						Lorem IPSUM
+						<div>programmer</div>
+						<div>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-whatsapp" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="team-person">
+					<img src="img/team-3.jpg">
+					<div class="team-currentPerson">
+						Lorem IPSUM
+						<div>marketing manager</div>
+						<div>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-whatsapp" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="team-person">
+					<img src="img/team-1.jpg">
+					<div class="team-currentPerson">
+						Lorem IPSUM
+						<div>web designer</div>
+						<div>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-whatsapp" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="team-person">
+					<img src="img/team-4.jpg">
+					<div class="team-currentPerson">
+						Lorem IPSUM
+						<div>seo</div>
+						<div>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-whatsapp" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -132,5 +192,6 @@
 	<script type="text/javascript" src="lib/uikit-icons	.js"></script>
 	<script type="text/javascript" src="lib/core.js"></script>
 	<script type="text/javascript" src="lib/specialty.js"></script>
+	<script type="text/javascript" src="lib/team.js"></script>
 </body>
 </html>
