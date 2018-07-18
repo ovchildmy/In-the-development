@@ -1,0 +1,72 @@
+.header{
+	height: 63px;
+	width: 100%;
+	background: #ffffdd;
+}
+
+.header > .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	height: inherit;
+}
+
+.header-name{
+    font-size: 40px;
+	cursor: pointer;
+    font-weight: bold;
+	margin-left: 120px;
+    text-transform: uppercase;
+}
+
+.header-ico{
+    margin-left: 880px;
+    display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.header-basket{
+	font-size: 49px;
+	margin-right: 95px;
+	cursor: pointer;
+}
+
+ul{
+	text-decoration: none;
+	list-style: none;
+}
+
+.header-user{
+	font-size: 49px;
+}
+
+.header-ico > ul > li > i{
+	position: relative;
+	cursor: default;
+}
+
+.header-ico > ul > li > ul{
+	position: absolute;
+	right: 0;
+	background: #ffffdd;
+	font-size: 40px;
+	top: -999em;
+	opacity: 0;
+	border-top: 1px solid #d3d3ab;
+}
+
+.header-ico > ul:hover > li > ul{
+	/*transition: 0.3s;*/
+	top: 63px;
+	opacity: 1;
+}
+
+.header-ico > ul:hover > li > ul > li{
+	cursor: pointer;
+}
+
+.header-ico > ul:hover > li > ul > li:last-child{
+	border-top: 1px solid #d3d3ab;
+}
