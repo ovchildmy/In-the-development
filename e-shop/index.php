@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style/uikit.css">
 	<link rel="stylesheet" type="text/css" href="style/core.css">
 	<link rel="stylesheet" type="text/css" href="style/header.css">
+	<link rel="stylesheet" type="text/css" href="style/navBar.css">
 	<meta charset="utf-8">
 	<title>E-Shop</title>
 </head>
@@ -26,9 +27,22 @@
 
 					</li>
 				</ul>
-
 			</div>
 		</div>
+	</div>
+
+
+	<div class="navBar">
+
+		<ul>
+			<li><div class="navBar-arrow"> <div><img src="img/navBar__arrow-right.png"></div> </div>
+				<ul>
+					<div class="shopList"></div>
+				</ul>
+			</li>
+		</ul>
+
+		
 	</div>
 
 

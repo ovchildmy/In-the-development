@@ -1,0 +1,64 @@
+.navBar{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	background: #ffffdd;
+	width: 40px;	
+}
+
+.navBar ul{
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navBar-arrow{
+	border-radius: 0 25px 25px 0;
+	width: 40px;	
+	transition: 1s;
+	height: 270px;
+	text-align: center;
+	font-size: 50px;
+	cursor: pointer;
+	background: #ffffdd;
+	position: absolute;
+	left: 0;
+}
+
+.navBar > ul:hover > li > div{
+	left: 300px;
+}
+
+.navBar > ul:hover > li > div > div{
+	border-left: 1px solid #d3d3ab;
+
+}
+
+.navBar-arrow > div > img{
+	width: 30px;
+	height: 150px;
+}
+
+.navBar-arrow > div{
+	height: 210px;
+	padding-top: 60px;
+/*	background-image: url("");
+	background-repeat: no-repeat;*/
+	/*background-size: 30px 150px;*/
+}
+
+.shopList{
+	width: 300px;
+	height: 300px;
+	background: #ffffdd;
+	position: absolute;
+	left: -300px;
+	transition: 1s;
+}
+
+
+
+.navBar > ul > li:hover > ul > div {
+	left: 0;
+}
