@@ -15,9 +15,12 @@
 	<div class="header">
 		<div class="container">
 			<div class="header-name">E-shop</div>
+			<form class="header-search">
+				<input type="text" name="">
+				<input type="submit" name="" value="Искать">
+			</form>
 			<div class="header-ico">
 				<div class="header-basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
-				
 				<ul>
 					<li class="header-user header-list"><i class="header-user__ico fa fa-user-circle-o" aria-hidden="true"></i>
 						<ul>
@@ -37,12 +40,27 @@
 		<ul>
 			<li><div class="navBar-arrow"> <div><img src="img/navBar__arrow-right.png"></div> </div>
 				<ul>
-					<div class="shopList"></div>
+					<div class="shopList">
+						<div>
+							<span>Электроника:</span>
+							<ul>
+								<li>Телефоны</li>
+								<li>Компьютеры</li>
+								<li>Консоли</li>
+							</ul>
+						</div>
+						<div>
+							<span>Мебель:</span>
+							<ul>
+								<li>Столы</li>
+								<li>Стулья</li>
+							</ul>
+						</div>
+					</div>
 				</ul>
 			</li>
 		</ul>
 
-		
 	</div>
 
 

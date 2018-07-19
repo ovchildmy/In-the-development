@@ -21,10 +21,24 @@
 }
 
 .header-ico{
-    margin-left: 880px;
+    margin-left: 180px;
     display: inline-flex;
 	flex-wrap: wrap;
 	align-items: center;
+}
+
+.header-search > input:first-child{
+    margin-left: 80px;
+    height: 42px;
+    font-size: 40px;
+	vertical-align: top;
+	border: 1px solid #d3d3ab;
+}
+
+.header-search > input:last-child{
+	margin-left: -5px;
+    height: 46px;
+
 }
 
 .header-basket{
@@ -70,3 +84,6 @@
 .header-ico > ul:hover > li > ul > li:last-child{
 	border-top: 1px solid #d3d3ab;
 }
+
+
+
