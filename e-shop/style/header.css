@@ -1,7 +1,7 @@
 .header{
 	height: 63px;
 	width: 100%;
-	background: #ffffdd;
+	background: #f3f3f3;
 }
 
 .header > .container{
@@ -21,24 +21,31 @@
 }
 
 .header-ico{
-    margin-left: 180px;
+    margin-left: 185px;
     display: inline-flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
+.header-ico a{
+	color: #666;
+	text-decoration: none;
+}
+
+.header-ico a:hover{
+	color: #585858;
+}
+
 .header-search > input:first-child{
     margin-left: 80px;
-    height: 42px;
+    height: 40px;
     font-size: 40px;
 	vertical-align: top;
-	border: 1px solid #d3d3ab;
 }
 
 .header-search > input:last-child{
 	margin-left: -5px;
     height: 46px;
-
 }
 
 .header-basket{
@@ -64,11 +71,12 @@
 .header-ico > ul > li > ul{
 	position: absolute;
 	right: 0;
-	background: #ffffdd;
+	background: #f3f3f3;
 	font-size: 40px;
 	top: -999em;
 	opacity: 0;
 	border-top: 1px solid #d3d3ab;
+
 }
 
 .header-ico > ul:hover > li > ul{

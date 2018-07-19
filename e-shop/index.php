@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style/core.css">
 	<link rel="stylesheet" type="text/css" href="style/header.css">
 	<link rel="stylesheet" type="text/css" href="style/navBar.css">
+	<link rel="stylesheet" type="text/css" href="style/productsWrap.css">
 	<meta charset="utf-8">
 	<title>E-Shop</title>
 </head>
@@ -16,7 +17,7 @@
 		<div class="container">
 			<div class="header-name">E-shop</div>
 			<form class="header-search">
-				<input type="text" name="">
+				<input type="text" name="" placeholder="Вы ищите..">
 				<input type="submit" name="" value="Искать">
 			</form>
 			<div class="header-ico">
@@ -25,7 +26,7 @@
 					<li class="header-user header-list"><i class="header-user__ico fa fa-user-circle-o" aria-hidden="true"></i>
 						<ul>
 							<li>Войти</li>
-							<li>Регистрация</li>
+							<li><a href="pages/registration.php">Регистрация</a></li>
 						</ul>
 
 					</li>
@@ -63,7 +64,61 @@
 
 	</div>
 
+	<div class="productsWrap">
+		<div class="product">
+			<img src="img/ps4.jpg">
+			<div class="productName">PS4</div>
+			<div class="productDescription">Game console.</div>
+		</div>
 
+		<div class="product">
+			<img src="img/x-box.jpg">
+			<div class="productName">X-Box</div>
+			<div class="productDescription">Game console.</div>
+		</div>
+
+		<div class="product">
+			<img src="img/galaxy-s9.jpg">
+			<div class="productName">Galaxy s9</div>
+			<div class="productDescription">Smart phone</div>
+		</div>
+
+		<div class="product">
+			<img src="img/ps4.jpg">
+			<div class="productName">PS4</div>
+			<div class="productDescription">Game console.</div>
+		</div>
+
+		<div class="product">
+			<img src="img/x-box.jpg">
+			<div class="productName">X-Box</div>
+			<div class="productDescription">Game console.</div>
+		</div>
+
+		<div class="product">
+			<img src="img/galaxy-s9.jpg">
+			<div class="productName">Galaxy s9</div>
+			<div class="productDescription">Smart phone</div>
+		</div>
+
+		<div class="product">
+			<img src="img/ps4.jpg">
+			<div class="productName">PS4</div>
+			<div class="productDescription">Game console.</div>
+		</div>
+
+		<div class="product">
+			<img src="img/x-box.jpg">
+			<div class="productName">X-Box</div>
+			<div class="productDescription">Game console.</div>
+		</div>
+
+		<div class="product">
+			<img src="img/galaxy-s9.jpg">
+			<div class="productName">Galaxy s9</div>
+			<div class="productDescription">Smart phone</div>
+		</div>
+	</div>
 
 
 

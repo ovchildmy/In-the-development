@@ -2,7 +2,7 @@
 	position: absolute;
 	top: 100px;
 	left: 0;
-	background: #ffffdd;
+	background: #f3f3f3;
 	width: 40px;	
 }
 
@@ -21,7 +21,7 @@
 	text-align: center;
 	font-size: 50px;
 	cursor: pointer;
-	background: #ffffdd;
+	background: #f3f3f3;
 	position: absolute;
 	left: 0;
 }
@@ -51,10 +51,11 @@
 .shopList{
 	width: 215px;
 	height: 300px;
-	background: #ffffdd;
+	background: #f3f3f3;
 	position: absolute;
 	left: -215px;
 	transition: 1s;
+	border-radius: 0 0 5px 0;
 }
 
 .navBar > ul > li:hover > ul > div {

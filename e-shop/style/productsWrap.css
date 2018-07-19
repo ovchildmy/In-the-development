@@ -1,0 +1,31 @@
+.productsWrap{
+	display: flex;
+	flex-wrap: wrap;
+	width: 94%;
+	min-height: 100px;
+	margin: 50px auto;
+
+}
+
+.product{
+	padding: 5px;
+	background: #f3f3f3;
+	height: 210px;
+	color: black;
+	margin: 10px 0 0 10px;
+	border-radius: 3px;
+}
+
+.product > img{
+    width: 218px;
+    height: 150px;
+}
+
+.productName{
+	text-align: center;
+	font-size: 25px;
+}
+
+.productDescription{
+	font-size: 19px;
+}
