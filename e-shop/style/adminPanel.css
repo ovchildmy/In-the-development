@@ -1,0 +1,131 @@
+.admin__header{
+	width: 100%;
+	height: 63px;
+	background: #f3f3f3;
+	display: flex;
+	align-items: center;	
+    text-transform: uppercase;
+}
+
+.admin__header-name{
+	font-size: 40px;
+	cursor: pointer;
+    font-weight: bold;
+    color: #666;
+	margin-left: 120px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.addBody{
+    width: 1260px;
+    background: black;
+    margin: 100px  auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	padding: 15px;
+}
+
+.addProduct{
+	width: 500px;
+	height: 600px;
+	display: inline-block;
+	background: white;
+	padding-left: 10px;
+	padding-right: 60px;
+	border-left: 2px dotted #e5e5e5;
+}
+
+.addProduct-headline{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.addProduct > div > input, .addProduct > div > select{
+    float: right;
+    width: 250px;
+    height: 34px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.addProduct > div > select:not(.typeSelect){
+}
+
+.product-currency{
+	margin-top: 3px;
+}
+
+.productDescriprion{
+	margin-top: 10px;
+	height: 160px;
+}
+
+.addProduct > div > textarea{
+	resize: none;
+	width: 250px;
+	float: right;
+}
+
+#file, #photos{
+	display: none;
+}
+
+.avatar, .product-photos{
+	float: right;
+    margin-top: 3px;
+    width: 250px;
+}
+
+.product-photosWrap{
+	margin-top: 3px;
+}
+
+.addProduct > div:nth-child(6){
+	height: 160px;
+}
+.addProduct > div:nth-child(2){
+	margin-top: 14px;
+}
+
+.addProduct > div:not(.addProduct-headline){
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+.addNav{
+	display: inline-block;
+}
+
+.adminDir, .adminList{
+	width: 670px;
+	height: 200px;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.addDir, .addList, .removeDir, .removeList{
+	width: 330px;
+	height: inherit;
+	background: gray;
+}
+
+.adminList{
+    margin-top: 20px;
+}
+
+

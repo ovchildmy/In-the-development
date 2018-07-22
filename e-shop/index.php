@@ -37,7 +37,9 @@
 								echo '<ul><li><a href="pages/login.php">Войти</a></li><li><a href="pages/registration.php">Регистрация</a></li></ul>';
 
 							} else if(isset($_SESSION["user"])){
-								echo '<ul><li class="user">'.$_SESSION["user"].'</li><li><a href="pages/settings.php" class="header-settings">Настройки</a></li><li><a href="?exit">Выйти</a></li></ul>';									
+								echo '<ul><li class="user">'.$_SESSION["user"].'</li>';
+								if($_SESSION["user"]=="admin")echo '<li class="adminPanel"><a href="pages/adminPanel.php">Панель</a></li>';
+								echo '<li><a href="pages/settings.php" class="header-settings">Настройки</a></li><li><a href="?exit">Выйти</a></li></ul>';
 							}
 						?>
 

@@ -81,14 +81,16 @@
 	font-size: 40px;
 	top: -999em;
 	opacity: 0;
-	border-top: 1px solid #d3d3ab;
+	border-top: 1px solid #e5e5e5;
 
 }
 
 .header-ico > ul:hover > li > ul{
-	/*transition: 0.3s;*/
 	top: 63px;
 	opacity: 1;
+	border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .header-ico > ul:hover > li > ul > li:not(.user){
@@ -96,11 +98,11 @@
 }
 
 .header-ico > ul:hover > li > ul > li:last-child{
-	border-top: 1px solid #d3d3ab;
+	border-top: 1px solid #e5e5e5;
 }
 
-.header-settings{
-	border-top: 1px solid #d3d3ab;
+.header-settings, .adminPanel{
+	border-top: 1px solid #e5e5e5;
 }
 
 .user{
