@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,8 +36,6 @@
 		    </div>
 
 		</form>
-	</div>
-
 	<?php 
 		include("db.php");
 
@@ -45,16 +44,19 @@
 
 		$query = mysql_query("SELECT eMail, password FROM users");
 
-		$logSuccsess = mysql_fetch_array($query, MYSQL_ASSOC);
-
-		var_dump($logSuccsess);
-
-		if($mail == $logSuccsess["mail"] && $password == $logSuccsess["password"]){
-			echo "Вы зашли успешно!";
+		while($logSuccsess = mysql_fetch_array($query, MYSQL_ASSOC)){
+			if($mail == $logSuccsess["eMail"] && $password == $logSuccsess["password"]){
+				$_SESSION["user"] = $mail;
+				echo "<div class='logSuccsess'>Вы зашли успешно!</div>";
+			}
 		}
 
 
+
+
 	?>
+	</div>
+
 
 
 

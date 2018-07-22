@@ -1,3 +1,10 @@
+<?php session_start(); 
+	if(isset($_GET["exit"])){
+		session_destroy();
+		header("Location: http://localhost/Freelance/In-the-development/e-shop/index.php");
+		exit;
+	}
+		?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +20,7 @@
 </head>
 <body>
 
+
 	<div class="header">
 		<div class="container">
 			<div class="header-name"><a href="index.php">E-shop</a></div>
@@ -24,10 +32,14 @@
 				<div class="header-basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
 				<ul>
 					<li class="header-user header-list"><i class="header-user__ico fa fa-user-circle-o" aria-hidden="true"></i>
-						<ul>
-							<li><a href="pages/login.php">Войти</a></li>
-							<li><a href="pages/registration.php">Регистрация</a></li>
-						</ul>
+						<?php 
+							if(!$_SESSION["user"]){
+								echo '<ul><li><a href="pages/login.php">Войти</a></li><li><a href="pages/registration.php">Регистрация</a></li></ul>';
+
+							} else if(isset($_SESSION["user"])){
+								echo '<ul><li class="user">'.$_SESSION["user"].'</li><li><a href="pages/settings.php" class="header-settings">Настройки</a></li><li><a href="?exit">Выйти</a></li></ul>';									
+							}
+						?>
 
 					</li>
 				</ul>
@@ -62,6 +74,8 @@
 		</ul>
 
 	</div>
+
+
 
 	<div class="productsWrap">
 		<div class="product">
@@ -129,7 +143,7 @@
 
 
 
-
+	
 
 	<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="lib/uikit.js"></script>

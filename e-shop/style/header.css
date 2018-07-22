@@ -91,12 +91,20 @@
 	opacity: 1;
 }
 
-.header-ico > ul:hover > li > ul > li{
+.header-ico > ul:hover > li > ul > li:not(.user){
 	cursor: pointer;
 }
 
 .header-ico > ul:hover > li > ul > li:last-child{
 	border-top: 1px solid #d3d3ab;
+}
+
+.header-settings{
+	border-top: 1px solid #d3d3ab;
+}
+
+.user{
+	cursor: default;
 }
 
 
