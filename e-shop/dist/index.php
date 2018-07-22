@@ -15,17 +15,17 @@
 
 	<div class="header">
 		<div class="container">
-			<div class="header-name"><a href="index.php">E-shop</a></div>
+			<div class="header-name">E-shop</div>
 			<form class="header-search">
-				<input class="uk-input uk-form-width-medium" type="text" name="" placeholder="Вы ищите..">
-				<input class="uk-button uk-button-default" type="submit" name="" value="Искать">
+				<input type="text" name="" placeholder="Вы ищите..">
+				<input type="submit" name="" value="Искать">
 			</form>
 			<div class="header-ico">
 				<div class="header-basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
 				<ul>
 					<li class="header-user header-list"><i class="header-user__ico fa fa-user-circle-o" aria-hidden="true"></i>
 						<ul>
-							<li><a href="pages/login.php">Войти</a></li>
+							<li>Войти</li>
 							<li><a href="pages/registration.php">Регистрация</a></li>
 						</ul>
 
@@ -133,7 +133,8 @@
 
 	<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="lib/uikit.js"></script>
-	<script type="text/javascript" src="lib/uikit-icons.js"></script>
+	<script type="text/javascript" src="lib/uikit-icons	.js"></script>
 	<script type="text/javascript" src="lib/core.js"></script>
+	<script type="text/javascript" src="lib/index.js"></script>
 </body>
 </html>

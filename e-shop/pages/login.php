@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style/uikit-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../style/uikit.css">
+	<link rel="stylesheet" type="text/css" href="../style/login.css">
+	<meta charset="utf-8">
+	<title>Вход</title>
+</head>
+<body>
+
+	<div class="log__header">
+		<a href="../index.php"><div class="log__header-name">E-shop</div></a>
+	</div>
+
+	<div class="logWrap">
+		<form action="" method="post">
+
+		    <div class="uk-margin">
+		        <div class="uk-inline">
+		            <span class="uk-form-icon" uk-icon="icon: mail"></span>
+		            <input class="uk-input uk-form-width-large" name="mail" type="text">
+		        </div>
+		    </div>
+
+		    <div class="uk-margin">
+		        <div class="uk-inline">
+		            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+		            <input class="uk-input uk-form-width-large" name="password" type="password">
+		        </div>
+		    </div>
+
+		    <div class="uk-margin" uk-margin>
+		        <button class="uk-button uk-button-default uk-form-width-large">Войти</button>
+		    </div>
+
+		</form>
+	</div>
+
+	<?php 
+		include("db.php");
+
+		$mail = $_POST["mail"];
+		$password = $_POST["password"];
+
+		$query = mysql_query("SELECT eMail, password FROM users");
+
+		$logSuccsess = mysql_fetch_array($query, MYSQL_ASSOC);
+
+		var_dump($logSuccsess);
+
+		if($mail == $logSuccsess["mail"] && $password == $logSuccsess["password"]){
+			echo "Вы зашли успешно!";
+		}
+
+
+	?>
+
+
+
+	<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../lib/uikit.js"></script>
+	<script type="text/javascript" src="../lib/uikit-icons.js"></script>
+</body>
+</html>
