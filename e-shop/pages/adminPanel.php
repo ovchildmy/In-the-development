@@ -18,10 +18,10 @@
 	
 		<div class="addProduct">
 			<div class="addProduct-headline">Добавить проект</div>
-			<form action="newProduct.php" method="post">
+			<form enctype="multipart/form-data" action="newProduct.php" method="post">
 				<div>Название <input class="uk-input" type="text" name="name"></div>
 				<div>Цена <input class="uk-input" type="text" name="price"></div>
-				<div>Тип 
+				<div>Директория 
 					<select class="typeSelect uk-select uk-form-width-small" name="type">
 						<option>Консоль</option>
 					</select>
@@ -47,7 +47,7 @@
 
 				<div class="product-photosWrap">
 					Фото(1) товара
-					<input accept=".png, .jpg, .jpeg" id="photo1" type="file" name="photo1">
+					<input accept=".png, .jpg, .jpeg" class="photo1" id="photo1" type="file" name="photo1">
 		            <label for="photo1" class="product-photos uk-button uk-button-default" type="button" tabindex="-1">Выбрать файлы</label>
 				</div>
 
