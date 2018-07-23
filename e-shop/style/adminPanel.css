@@ -21,8 +21,7 @@ a:hover{
 
 .addBody{
     width: 1260px;
-    background: black;
-    margin: 100px  auto;
+    margin: 60px  auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -31,22 +30,22 @@ a:hover{
 
 .addProduct{
 	width: 500px;
-	height: 600px;
+	height: 810px;
 	display: inline-block;
-	background: white;
 	padding-left: 10px;
 	padding-right: 60px;
 	border-left: 2px dotted #e5e5e5;
+	background: #fcfcfc;
 }
 
 .addProduct-headline{
     font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 4px solid #e5e5e5;
 }
 
-.addProduct > div > input, .addProduct > div > select{
+.addProduct > form > div > input, .addProduct > form > div > select{
     float: right;
     width: 250px;
     height: 34px;
@@ -54,11 +53,11 @@ a:hover{
     margin-top: 5px;
 }
 
-.addProduct > div > select:not(.typeSelect){
+.addProduct > form > div > select:not(.typeSelect){
 }
 
 .product-currency{
-	margin-top: 3px;
+	margin-top: 6px;
 }
 
 .productDescriprion{
@@ -66,14 +65,18 @@ a:hover{
 	height: 160px;
 }
 
-.addProduct > div > textarea{
+.addProduct > form > div > textarea{
 	resize: none;
 	width: 250px;
 	float: right;
 }
 
-#file, #photos{
+#file, #photo1, #photo2, #photo3, #photo4, #photo5, #photo6{
 	display: none;
+}
+
+.avatarWrap{
+    margin-top: -10px;
 }
 
 .avatar, .product-photos{
@@ -86,24 +89,21 @@ a:hover{
 	margin-top: 3px;
 }
 
-.addProduct > div:nth-child(6){
+.addProduct > form > div:nth-child(5){
 	height: 160px;
 }
-.addProduct > div:nth-child(2){
+.addProduct > form > div:nth-child(1){
 	margin-top: 14px;
 }
 
-.addProduct > div:not(.addProduct-headline){
+.addProduct > form > div:not(.addProduct-headline){
 	font-size: 30px;
 }
 
-
-
-
-
-
-
-
+.addProductSubmit{
+    width: 100%;
+    margin-top: 10px;
+}
 
 .addNav{
 	display: inline-block;
@@ -111,21 +111,49 @@ a:hover{
 
 .adminDir, .adminList{
 	width: 670px;
-	height: 200px;
-	background: white;
+	height: 275px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .addDir, .addList, .removeDir, .removeList{
-	width: 330px;
+	width: 285px;
 	height: inherit;
-	background: gray;
+	border-left: 2px dotted #e5e5e5;
+	background: #fcfcfc;
+	padding-right: 30px; 
+	padding-left: 15px; 
+}
+
+.addDir > div, .removeDir > div, .addList > div, .removeList > div{
+	font-size: 27px;
+	font-weight: bold;
+    border-bottom: 4px solid #e5e5e5;
+}
+
+.addDir > form > div, .removeDir > form > div, .addList > form > div, .removeList > form > div{
+	font-size: 22px;
+	margin-top: 20px;
+}
+
+.addDir > form > div > input, .removeDirSelect, .addList > form > div > input, .removeListSelect{
+    width: 180px;
+    float: right;
+}
+
+.navSubmit{
+	width: 100%;
+	margin-top: 120px;
+}
+
+.navSubmitDir{
+	width: 100%;
+	margin-top: 68px;
 }
 
 .adminList{
-    margin-top: 20px;
+    margin-top: 260px;
 }
 
 
