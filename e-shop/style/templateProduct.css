@@ -1,0 +1,155 @@
+.productWrap{
+	width: 90%;
+	height: 70%;
+	background: #ECECEC;
+	margin: 30px auto;
+}
+
+.product-left, .product-right{
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+.product-right{
+	width: 41%;
+	padding: 0 60px 0;
+}
+
+
+.product-imgWrap{
+	height: 450px;
+	background: red;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.product-img__avatar{
+	background: yellow;
+	height: 300px;
+}
+
+.product-img__slider{
+	background: #FFB400;
+	height: 130px;
+	margin-top: 10px;
+}
+	
+.product-price{
+	background: #DDFDC5;
+	font-size: 44px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.product-buyButton, .product-basketButton{
+	background: green;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.product-basketButton{
+	background: #6FBE6D;	
+}
+
+.product-name{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	border-bottom: 1px dashed #666;
+}
+
+.product-description{
+	text-align: left;
+	text-align: justify;
+	border-bottom: 1px dashed #666;
+	font-size: 20px;
+}
+
+.product-characteristic{
+	background: blue;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 10px auto 0;
+	color: black;
+}
+
+.product-rating{
+	background: #C1BE90;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.product-rating__stars{
+	font-size: 34px;
+}
+
+.product-comments{
+	background: gray;
+	margin-top: 10px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.next-comment{
+	display: flex;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 50px;
+	cursor: pointer;
+	width: 20px;
+	background: red;
+	vertical-align: top;
+	color: white;
+}
+
+.product-comments__name{
+	display: inline-block;
+	font-weight: bold;
+	width: initial;
+}
+
+.product-comments__header{
+	font-size: 20px;
+}
+
+.product-comments__rating{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.product-comment__page{
+	display: inline-block;
+	float: right;
+	width: initial;
+	margin-right: 10px;
+	font-size: 13px;
+}
+
+.product-comments__comment{
+	margin-top: 10px;
+}
+
+.product-comments__shortComment{
+	font-size: 19px;
+}
+
+.product-footer{
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+.product-footer input, .product-footer textarea, .product-footer .footer-stars{
+	float: right;
+}

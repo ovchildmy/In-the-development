@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="style/uikit.css">
 	<link rel="stylesheet" type="text/css" href="style/core.css">
 	<link rel="stylesheet" type="text/css" href="style/header.css">
+	<link rel="stylesheet" type="text/css" href="style/header-min.css">
 	<link rel="stylesheet" type="text/css" href="style/navBar.css">
 	<link rel="stylesheet" type="text/css" href="style/productsWrap.css">
 	<meta charset="utf-8">
@@ -78,62 +79,21 @@
 	</div>
 
 
+	<?php  
 
-	<div class="productsWrap">
-		<div class="product">
-			<img src="img/ps4.jpg">
-			<div class="productName">PS4</div>
-			<div class="productDescription">Game console.</div>
-		</div>
+		if($_GET[""] == ""){
+			// include("pages/products.php");
+			include("pages/templateProduct.php");
+		}
 
-		<div class="product">
-			<img src="img/x-box.jpg">
-			<div class="productName">X-Box</div>
-			<div class="productDescription">Game console.</div>
-		</div>
 
-		<div class="product">
-			<img src="img/galaxy-s9.jpg">
-			<div class="productName">Galaxy s9</div>
-			<div class="productDescription">Smart phone</div>
-		</div>
 
-		<div class="product">
-			<img src="img/ps4.jpg">
-			<div class="productName">PS4</div>
-			<div class="productDescription">Game console.</div>
-		</div>
 
-		<div class="product">
-			<img src="img/x-box.jpg">
-			<div class="productName">X-Box</div>
-			<div class="productDescription">Game console.</div>
-		</div>
 
-		<div class="product">
-			<img src="img/galaxy-s9.jpg">
-			<div class="productName">Galaxy s9</div>
-			<div class="productDescription">Smart phone</div>
-		</div>
 
-		<div class="product">
-			<img src="img/ps4.jpg">
-			<div class="productName">PS4</div>
-			<div class="productDescription">Game console.</div>
-		</div>
+	?>
 
-		<div class="product">
-			<img src="img/x-box.jpg">
-			<div class="productName">X-Box</div>
-			<div class="productDescription">Game console.</div>
-		</div>
-
-		<div class="product">
-			<img src="img/galaxy-s9.jpg">
-			<div class="productName">Galaxy s9</div>
-			<div class="productDescription">Smart phone</div>
-		</div>
-	</div>
+	
 
 
 

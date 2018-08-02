@@ -89,14 +89,22 @@
 			<div class="adminDir">
 				<div class="addDir">
 					<div>Создать директорию</div>
-					<form>
+					<form action="adminDir.php" method="post">
 						<div>
-							Название <input class="uk-input" type="text" name="">
+							Название <input class="uk-input" type="text" name="name">
 						</div>
 						<div>
 							Где:
-							<select class="removeListSelect uk-select uk-form-width-small">
-								<option>Электроника</option>	
+							<select class="addDirSelect uk-select uk-form-width-small" name="whereList">	
+								<?php 
+									include("db.php");
+
+									$list = mysql_query("SELECT name FROM list");
+									while($var = mysql_fetch_array($list, MYSQL_ASSOC)){
+										echo "<option>".$var["name"]."</option>";
+									}
+
+								?>	
 							</select>
 						</div>
 						<input class="uk-button uk-button-default navSubmitDir" type="submit" name="">
@@ -106,15 +114,41 @@
 					<div>Удалить директорию</div>
 					<form>
 						<div>
-							Название 
-							<select class="removeDirSelect uk-select uk-form-width-small">
-								<option>Консоль</option>	
-							</select>
-						</div>
-						<div>
 							Где:
-							<select class="removeListSelect uk-select uk-form-width-small">
-								<option>Электроника</option>	
+							<select class="removeDirSelect uk-select uk-form-width-small">
+								<?php 
+
+									$removeDirSelect = mysql_query("SELECT * FROM list");
+									$removeDirSelectSec = mysql_query("SELECT * FROM list");
+									while($removeDirSelectWhere = mysql_fetch_array($removeDirSelect, MYSQL_ASSOC)){
+										echo "<option>".$removeDirSelectWhere["name"]."</option>";
+									}
+
+								echo '</select></div>';
+
+								// var_dump($removeDirSelect) ;
+								// while(){
+								// }
+									// $addDir = mysql_query("SELECT * FROM direction");
+									// while($dir = mysql_fetch_array($addDir, MYSQL_ASSOC)){
+									// 	$listName = mysql_fetch_array($removeDirSelectSec, MYSQL_ASSOC);
+
+									// 		// if($dir["whereList"] == $listName["name"]){
+									// 		// 	echo "<option>".$dir["whereList"]."</option>";
+									// 		// }
+
+									// 	if($listName["name"]=="ТУЦ"){
+									// 		echo "123";
+									// 	}
+
+
+									// }
+
+								echo '<div>Название<select class="removeDirSelect uk-select uk-form-width-small">';
+								
+
+
+								?>	
 							</select>
 						</div>
 						<input class="uk-button uk-button-default navSubmitDir" type="submit" name="">
@@ -125,9 +159,9 @@
 			<div class="adminList">
 				<div class="addList">
 					<div>Создать Список</div>
-					<form>
+					<form class="addListForm" action="adminList.php" method="post">
 						<div>
-							Название <input class="uk-input" type="text" name="">
+							Название <input class="addListInput uk-input" type="text" name="name">
 						</div>
 						<input class="uk-button uk-button-default navSubmit" type="submit" name="">
 					</form>
@@ -138,7 +172,14 @@
 						<div>
 							Название 
 							<select class="removeListSelect uk-select uk-form-width-small">
-								<option>Электроника</option>	
+								<?php 
+
+									$list = mysql_query("SELECT name FROM list");
+									while($var = mysql_fetch_array($list, MYSQL_ASSOC)){
+										echo "<option>".$var["name"]."</option>";
+									}
+
+								?>	
 							</select>
 						</div>
 						<input class="uk-button uk-button-default navSubmit" type="submit" name="">
@@ -148,6 +189,8 @@
 		</div>
 	
 	</div>
-
+								
+	<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../lib/adminDirection.js"></script>
 </body>
 </html>

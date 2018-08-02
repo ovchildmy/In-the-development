@@ -137,7 +137,7 @@ a:hover{
 	margin-top: 20px;
 }
 
-.addDir > form > div > input, .removeDirSelect, .addList > form > div > input, .removeListSelect{
+.addDir > form > div > input, .addDirSelect, .removeDirSelect, .removeDirSelect, .addList > form > div > input, .removeListSelect{
     width: 180px;
     float: right;
 }
